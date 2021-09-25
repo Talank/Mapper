@@ -25,6 +25,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Run tests with Maven
         run: |
+          pwd
           mvn -version
           cd base
           mvn testrunner:testplugin
