@@ -1,0 +1,1051 @@
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.ibatis.reflection.Reflector (file:/home/talank/.m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar) to method java.lang.Class.checkPackageAccess(java.lang.SecurityManager,java.lang.ClassLoader,boolean)
+WARNING: Please consider reporting this to the maintainers of org.apache.ibatis.reflection.Reflector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@768fc0f2]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@768fc0f2]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@768fc0f2]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@9ebe38b]
+DEBUG [main] - ==>  Preparing: DELETE FROM user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: DELETE FROM user WHERE state = ? 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - ==>  Preparing: DELETE FROM user WHERE lock = ? 
+DEBUG [main] - ==> Parameters: 2(Integer)
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - ==>  Preparing: DELETE FROM user WHERE lock = ? AND state = ? 
+DEBUG [main] - ==> Parameters: 1(Integer), 2(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@9ebe38b]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@9ebe38b]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@9ebe38b]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4df5bcb4]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4df5bcb4]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4df5bcb4]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@736caf7a]
+DEBUG [main] - ==>  Preparing: SELECT id,name,lock,state FROM user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: UPDATE user SET name = ?,lock = ?,state = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: abel533(String), 1(Integer), 2(Integer), 1(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,name,lock,state FROM user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@736caf7a]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@736caf7a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@736caf7a]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6ad59d92]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6ad59d92]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6ad59d92]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@62e20a76]
+DEBUG [main] - ==>  Preparing: SELECT id,name,lock,state FROM user 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - ==>  Preparing: SELECT id,name,lock,state FROM user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@62e20a76]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@62e20a76]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@9ef8eb7]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@9ef8eb7]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@9ef8eb7]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1ecee32c]
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,lock,state ) VALUES( ?,?,?,? ) 
+DEBUG [main] - ==> Parameters: 3(Integer), liuzh(String), 2(Integer), 1(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,name,lock,state FROM user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 3(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1ecee32c]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1ecee32c]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1ecee32c]
+hello - hello
+hello_world - hello_world
+helloWorld - hello_world
+hello1 - hello1
+hello_1 - hello_1
+hello - hello
+hello_world - hello_world
+helloWorld - hello_world
+hello1 - hello1
+hello_1 - hello_1
+hello - HELLO
+hello_world - HELLO_WORLD
+helloWorld - HELLO_WORLD
+hello1 - HELLO1
+hello_1 - HELLO_1
+DEBUG [main] - Class not found: org.jboss.vfs.VFS
+DEBUG [main] - JBoss 6 VFS API is not available in this environment.
+DEBUG [main] - Class not found: org.jboss.vfs.VirtualFile
+DEBUG [main] - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG [main] - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model
+DEBUG [main] - Reader entry: BaseLogicDelete.class
+DEBUG [main] - Reader entry: BaseLogicDelete.java
+DEBUG [main] - Reader entry: Country.class
+DEBUG [main] - Reader entry: Country.java
+DEBUG [main] - Reader entry: Country2.class
+DEBUG [main] - Reader entry: Country2.java
+DEBUG [main] - Reader entry: CountryExample.class
+DEBUG [main] - Reader entry: CountryExample.java
+DEBUG [main] - Reader entry: CountryExample$Criteria.class
+DEBUG [main] - Reader entry: CountryExample$Criterion.class
+DEBUG [main] - Reader entry: CountryExample$GeneratedCriteria.class
+DEBUG [main] - Reader entry: CountryI.class
+DEBUG [main] - Reader entry: CountryI.java
+DEBUG [main] - Reader entry: CountryJDBC.class
+DEBUG [main] - Reader entry: CountryJDBC.java
+DEBUG [main] - Reader entry: CountryT.class
+DEBUG [main] - Reader entry: CountryT.java
+DEBUG [main] - Reader entry: CountryVersion.class
+DEBUG [main] - Reader entry: CountryVersion.java
+DEBUG [main] - Reader entry: Entity.class
+DEBUG [main] - Reader entry: Entity.java
+DEBUG [main] - Reader entry: TbUser.class
+DEBUG [main] - Reader entry: TbUser.java
+DEBUG [main] - Reader entry: TbUserLogicDelete.class
+DEBUG [main] - Reader entry: TbUserLogicDelete.java
+DEBUG [main] - Reader entry: UserInfo.class
+DEBUG [main] - Reader entry: UserInfo.java
+DEBUG [main] - Reader entry: UserInfoAble.class
+DEBUG [main] - Reader entry: UserInfoAble.java
+DEBUG [main] - Reader entry: UserInfoMap.class
+DEBUG [main] - Reader entry: UserInfoMap.java
+DEBUG [main] - Reader entry: UserLogin.class
+DEBUG [main] - Reader entry: UserLogin.java
+DEBUG [main] - Reader entry: UserLogin2.class
+DEBUG [main] - Reader entry: UserLogin2.java
+DEBUG [main] - Reader entry: UserLogin2Key.class
+DEBUG [main] - Reader entry: UserLogin2Key.java
+DEBUG [main] - Reader entry: UserParent.class
+DEBUG [main] - Reader entry: UserParent.java
+DEBUG [main] - Listing file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/BaseLogicDelete.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/BaseLogicDelete.class
+DEBUG [main] - Reader entry: ����   2 +  'tk/mybatis/mapper/model/BaseLogicDelete  java/lang/Object id Ljava/lang/Integer; RuntimeVisibleAnnotations Ljavax/persistence/Id; "Ljavax/persistence/GeneratedValue; strategy "Ljavax/persistence/GenerationType; IDENTITY isValid *Ltk/mybatis/mapper/annotation/LogicDelete; isDeletedValue     notDeletedValue    Ljavax/persistence/Column; name is_valid <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/BaseLogicDelete.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/BaseLogicDelete.java
+DEBUG [main] - Reader entry: package tk.mybatis.mapper.model;
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country.class
+DEBUG [main] - Reader entry: ����   2 B  tk/mybatis/mapper/model/Country  tk/mybatis/mapper/model/Entity  java/io/Serializable  *tk/mybatis/mapper/entity/IDynamicTableName serialVersionUID J 
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country2.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country2.class
+DEBUG [main] - Reader entry: ����   2 B   tk/mybatis/mapper/model/Country2  java/lang/Object id Ljava/lang/Integer; RuntimeVisibleAnnotations Ljavax/persistence/Id; "Ljavax/persistence/GeneratedValue; strategy "Ljavax/persistence/GenerationType; IDENTITY countryname Ljava/lang/String; countrycode <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country2.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country2.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample.class
+DEBUG [main] - Reader entry: ����   2 N  &tk/mybatis/mapper/model/CountryExample  java/lang/Object 
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$Criteria.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$Criteria.class
+DEBUG [main] - Reader entry: ����   2 �  /tk/mybatis/mapper/model/CountryExample$Criteria  8tk/mybatis/mapper/model/CountryExample$GeneratedCriteria <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$Criterion.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$Criterion.class
+DEBUG [main] - Reader entry: ����   2 H  0tk/mybatis/mapper/model/CountryExample$Criterion  java/lang/Object 	condition Ljava/lang/String; value Ljava/lang/Object; secondValue noValue Z singleValue betweenValue 	listValue typeHandler <init> (Ljava/lang/String;)V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$GeneratedCriteria.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$GeneratedCriteria.class
+DEBUG [main] - Reader entry: ����   2 �  8tk/mybatis/mapper/model/CountryExample$GeneratedCriteria  java/lang/Object criteria Ljava/util/List; 	Signature DLjava/util/List<Ltk/mybatis/mapper/model/CountryExample$Criterion;>; <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryI.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryI.class
+DEBUG [main] - Reader entry: ����   2 F   tk/mybatis/mapper/model/CountryI  java/lang/Object id Ljava/lang/Integer; RuntimeVisibleAnnotations Ljavax/persistence/Id; "Ljavax/persistence/GeneratedValue; strategy "Ljavax/persistence/GenerationType; IDENTITY countryname Ljava/lang/String; countrycode <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryI.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryI.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryJDBC.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryJDBC.class
+DEBUG [main] - Reader entry: ����   2 D  #tk/mybatis/mapper/model/CountryJDBC  java/lang/Object id Ljava/lang/Integer; RuntimeVisibleAnnotations Ljavax/persistence/Id; "Ljavax/persistence/GeneratedValue; 	generator JDBC countryname Ljava/lang/String; countrycode <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryJDBC.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryJDBC.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryT.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryT.class
+DEBUG [main] - Reader entry: ����   2 ?   tk/mybatis/mapper/model/CountryT  java/lang/Object id Ljava/lang/Integer; RuntimeVisibleAnnotations Ljavax/persistence/Id; countryname Ljava/lang/String; countrycode Ljavax/persistence/Transient; <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryT.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryT.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryVersion.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryVersion.class
+DEBUG [main] - Reader entry: ����   2   &tk/mybatis/mapper/model/CountryVersion  tk/mybatis/mapper/model/Country version Ljava/lang/Integer; RuntimeVisibleAnnotations &Ltk/mybatis/mapper/annotation/Version; <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryVersion.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryVersion.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Entity.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Entity.class
+DEBUG [main] - Reader entry: ����   2 4  tk/mybatis/mapper/model/Entity  java/lang/Object a Ljava/lang/Integer; b c d id Ljava/io/Serializable; 	Signature TID; RuntimeVisibleAnnotations $Ltk/mybatis/mapper/annotation/Order; value desc priority    name TNAME; Ljavax/persistence/Transient; <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Entity.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Entity.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUser.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUser.class
+DEBUG [main] - Reader entry: ����   2 N  tk/mybatis/mapper/model/TbUser  java/lang/Object id Ljava/lang/Integer; RuntimeVisibleAnnotations Ljavax/persistence/Id; "Ljavax/persistence/GeneratedValue; strategy "Ljavax/persistence/GenerationType; IDENTITY username Ljava/lang/String; Ljavax/persistence/Column; name password isValid is_valid <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUser.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUser.java
+DEBUG [main] - Reader entry: package tk.mybatis.mapper.model;
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUserLogicDelete.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUserLogicDelete.class
+DEBUG [main] - Reader entry: ����   2 B  )tk/mybatis/mapper/model/TbUserLogicDelete  'tk/mybatis/mapper/model/BaseLogicDelete username Ljava/lang/String; RuntimeVisibleAnnotations Ljavax/persistence/Column; name password <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUserLogicDelete.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUserLogicDelete.java
+DEBUG [main] - Reader entry: package tk.mybatis.mapper.model;
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfo.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfo.class
+DEBUG [main] - Reader entry: ����   2 s   tk/mybatis/mapper/model/UserInfo  java/lang/Object  java/io/Serializable serialVersionUID J 
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfo.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfo.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoAble.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoAble.class
+DEBUG [main] - Reader entry: ����   2 r  $tk/mybatis/mapper/model/UserInfoAble  "tk/mybatis/mapper/model/UserParent  java/io/Serializable serialVersionUID J 
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoAble.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoAble.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoMap.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoMap.class
+DEBUG [main] - Reader entry: ����   2 o  #tk/mybatis/mapper/model/UserInfoMap  java/util/HashMap  java/io/Serializable serialVersionUID J 
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoMap.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoMap.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin.class
+DEBUG [main] - Reader entry: ����   2 L  !tk/mybatis/mapper/model/UserLogin  java/lang/Object logid Ljava/lang/Integer; RuntimeVisibleAnnotations Ljavax/persistence/Id; "Ljavax/persistence/GeneratedValue; strategy "Ljavax/persistence/GenerationType; IDENTITY username Ljava/lang/String; 	logindate Ljava/util/Date; loginip <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2.class
+DEBUG [main] - Reader entry: ����   2 $  "tk/mybatis/mapper/model/UserLogin2  %tk/mybatis/mapper/model/UserLogin2Key 	logindate Ljava/util/Date; loginip Ljava/lang/String; <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2Key.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2Key.class
+DEBUG [main] - Reader entry: ����   2 ;  %tk/mybatis/mapper/model/UserLogin2Key  java/lang/Object logid Ljava/lang/Integer; RuntimeVisibleAnnotations Ljavax/persistence/Id; "Ljavax/persistence/GeneratedValue; strategy "Ljavax/persistence/GenerationType; IDENTITY username Ljava/lang/String; <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2Key.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2Key.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserParent.class
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserParent.class
+DEBUG [main] - Reader entry: ����   2   "tk/mybatis/mapper/model/UserParent  java/lang/Object address Ljava/lang/String; RuntimeVisibleAnnotations Ljavax/persistence/Column; 	updatable     <init> ()V Code
+DEBUG [main] - Find JAR URL: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserParent.java
+DEBUG [main] - Not a JAR: file:/home/talank/browsing/playground/newTestsFlaky/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserParent.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.BaseLogicDelete matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.Country matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.Country2 matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryExample matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryExample$Criteria matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryExample$Criterion matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryExample$GeneratedCriteria matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryI matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryJDBC matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryT matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryVersion matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.Entity matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.TbUser matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.TbUserLogicDelete matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserInfo matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserInfoAble matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserInfoMap matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserLogin matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserLogin2 matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserLogin2Key matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserParent matches criteria [is assignable to Object]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@45e37a7e]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@45e37a7e]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@45e37a7e]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b7ff809]
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 10086(Integer), 天朝(String), CN(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE countrycode = ? ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: CN(String)
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 10086(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b7ff809]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b7ff809]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b7ff809]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1cbf6e72]
+DEBUG [main] - ==>  Preparing: INSERT INTO country 
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1cbf6e72]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1cbf6e72]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1cbf6e72]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7fc6de5b]
+DEBUG [main] - ==>  Preparing: INSERT INTO country 
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7fc6de5b]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7fc6de5b]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7fc6de5b]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5dd91bca]
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname ) VALUES( ?,? ) 
+DEBUG [main] - ==> Parameters: 10086(Integer), 天朝(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE id = ? ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 10086(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 10086(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5dd91bca]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5dd91bca]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5dd91bca]
+id  -  @Id:false  -  javaType:class java.lang.Integer
+name  -  @Id:false  -  javaType:class java.lang.String
+list  -  @Id:false  -  javaType:interface java.util.List
+countryname  -  @Id:false  -  javaType:class java.lang.String
+countrycode  -  @Id:false  -  javaType:class java.lang.String
+dynamicTableName123  -  @Id:false  -  javaType:class java.lang.String
+======================================
+id  -  @Id:true  -  javaType:class java.lang.Integer
+name  -  @Id:false  -  javaType:class java.lang.String
+list  -  @Id:false  -  javaType:interface java.util.List
+countryname  -  @Id:false  -  javaType:class java.lang.String
+countrycode  -  @Id:false  -  javaType:class java.lang.String
+dynamicTableName123  -  @Id:false  -  javaType:class java.lang.String
+dynamicTableName  -  @Id:false  -  javaType:class java.lang.String
+======================================
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@b78a709]
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE ( ( id = ? ) ) and is_valid = 1 
+DEBUG [main] - ==> Parameters: 9(Integer)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE ( ( id = ? ) or ( username = ? ) ) and is_valid = 1 
+DEBUG [main] - ==> Parameters: 9(Integer), test(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@b78a709]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@b78a709]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b444398]
+DEBUG [main] - ==>  Preparing: UPDATE tb_user SET is_valid = 0 WHERE ( ( id = ? ) ) and is_valid = 1 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM tb_user WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM tb_user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b444398]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b444398]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b444398]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@79145d5a]
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE is_valid = 1 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 5
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE username = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: test(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT id,username,password,is_valid FROM tb_user WHERE is_valid = ? 
+DEBUG [main] - ==> Parameters: 0(Integer)
+DEBUG [main] - <==      Total: 4
+DEBUG [main] - ==>  Preparing: SELECT id,username,password,is_valid FROM tb_user WHERE username = ? AND is_valid = ? 
+DEBUG [main] - ==> Parameters: test(String), 0(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@79145d5a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@79145d5a]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@10993713]
+DEBUG [main] - ==>  Preparing: INSERT INTO tb_user ( id,is_valid,username,password ) VALUES( ?,1,?,? ) 
+DEBUG [main] - ==> Parameters: null, test111(String), null
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Executing: CALL IDENTITY() 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: INSERT INTO tb_user ( id,username,password,is_valid ) VALUES( ?,?,?,? ) 
+DEBUG [main] - ==> Parameters: null, test222(String), null, null
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Executing: CALL IDENTITY() 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM tb_user WHERE id = ? AND username = ? 
+DEBUG [main] - ==> Parameters: 11(Integer), test222(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM tb_user WHERE username = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: test222(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@10993713]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@10993713]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@10993713]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b77a04f]
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE is_valid = 1 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 5
+DEBUG [main] - ==>  Preparing: SELECT id,username,password,is_valid FROM tb_user 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 9
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b77a04f]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b77a04f]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60dce7ea]
+DEBUG [main] - ==>  Preparing: INSERT INTO tb_user ( id,is_valid,username ) VALUES( ?,1,? ) 
+DEBUG [main] - ==> Parameters: null, test333(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Executing: CALL IDENTITY() 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM tb_user WHERE id = ? AND username = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 12(Integer), test333(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM tb_user WHERE username = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: test333(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: INSERT INTO tb_user ( id,username ) VALUES( ?,? ) 
+DEBUG [main] - ==> Parameters: null, test333(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Executing: CALL IDENTITY() 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM tb_user WHERE username = ? 
+DEBUG [main] - ==> Parameters: test333(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM tb_user WHERE username = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: test333(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60dce7ea]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60dce7ea]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60dce7ea]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7446d8d5]
+DEBUG [main] - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM tb_user WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 8(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: UPDATE tb_user SET is_valid = 0 WHERE username = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: test(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM tb_user WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 8(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE is_valid = 1 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 4
+DEBUG [main] - ==>  Preparing: SELECT id,username,password,is_valid FROM tb_user WHERE username = ? 
+DEBUG [main] - ==> Parameters: test(String)
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - ==>  Preparing: DELETE FROM tb_user WHERE username = ? 
+DEBUG [main] - ==> Parameters: test(String)
+DEBUG [main] - <==    Updates: 2
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE is_valid = 1 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 4
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7446d8d5]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7446d8d5]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7446d8d5]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4fc5e095]
+DEBUG [main] - ==>  Preparing: UPDATE tb_user SET is_valid = 1,username = ? WHERE ( ( username = ? ) ) and is_valid = 1 
+DEBUG [main] - ==> Parameters: 123(String), test(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE ( ( username = ? ) ) and is_valid = 1 
+DEBUG [main] - ==> Parameters: 123(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4fc5e095]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4fc5e095]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4fc5e095]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@79da1ec0]
+DEBUG [main] - ==>  Preparing: UPDATE tb_user SET is_valid = 0 WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 3(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM tb_user WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 3(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM tb_user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 3(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: UPDATE tb_user SET is_valid = 0 WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 9(Integer)
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@79da1ec0]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@79da1ec0]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@79da1ec0]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@27953a83]
+DEBUG [main] - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM tb_user WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 9(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM tb_user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 9(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@27953a83]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@27953a83]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@55b5f5d2]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM tb_user WHERE is_valid = 1 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM tb_user 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM tb_user WHERE is_valid = ? 
+DEBUG [main] - ==> Parameters: 0(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@55b5f5d2]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@55b5f5d2]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b220bcb]
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 9(Integer)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - ==>  Preparing: SELECT id,username,password,is_valid FROM tb_user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 9(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b220bcb]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b220bcb]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3dddefd8]
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE ( ( username = ? ) ) and is_valid = 1 
+DEBUG [main] - ==> Parameters: test(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE ( ( username = ? ) or ( password = ? or username = ? ) ) and is_valid = 1 
+DEBUG [main] - ==> Parameters: test(String), dddd(String), test2(String)
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3dddefd8]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3dddefd8]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6c6c5427]
+DEBUG [main] - ==>  Preparing: UPDATE tb_user SET is_valid = 1,username = ?,password = ? WHERE ( ( username = ? ) ) and is_valid = 1 
+DEBUG [main] - ==> Parameters: 123(String), null, test(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE ( ( username = ? ) ) and is_valid = 1 
+DEBUG [main] - ==> Parameters: 123(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6c6c5427]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6c6c5427]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6c6c5427]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e63ec0b]
+DEBUG [main] - ==>  Preparing: UPDATE tb_user SET is_valid = 1,username = ?,password = ? WHERE is_valid = 1 
+DEBUG [main] - ==> Parameters: 123(String), null
+DEBUG [main] - <==    Updates: 5
+DEBUG [main] - ==>  Preparing: UPDATE tb_user SET is_valid = 1,username = ? WHERE is_valid = 1 
+DEBUG [main] - ==> Parameters: 123(String)
+DEBUG [main] - <==    Updates: 5
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE is_valid = 1 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 5
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e63ec0b]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e63ec0b]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e63ec0b]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@388ba540]
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: UPDATE tb_user SET is_valid = 1,username = ?,password = ? WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: test1(String), null, 1(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE id = ? AND username = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 1(Integer), test1(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@388ba540]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@388ba540]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@388ba540]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7894f09b]
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: UPDATE tb_user SET is_valid = 1,username = ? WHERE id = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: test1(String), 1(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,is_valid,username,password FROM tb_user WHERE id = ? AND username = ? AND is_valid = 1 
+DEBUG [main] - ==> Parameters: 1(Integer), test1(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7894f09b]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7894f09b]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7894f09b]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@242aa8d9]
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE ( ( id > ? ) ) 
+DEBUG [main] - ==> Parameters: 100(Integer)
+DEBUG [main] - <==    Updates: 83
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@242aa8d9]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@242aa8d9]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@242aa8d9]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@37bd68c3]
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE ( ( countryname like ? ) or ( id > ? ) ) 
+DEBUG [main] - ==> Parameters: A%(String), 100(Integer)
+DEBUG [main] - <==    Updates: 95
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@37bd68c3]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@37bd68c3]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@37bd68c3]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@239b0f9d]
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE ( ( countryname like ? ) or ( Id > ? ) ) 
+DEBUG [main] - ==> Parameters: A%(String), 100(Integer)
+DEBUG [main] - <==    Updates: 95
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@239b0f9d]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@239b0f9d]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@239b0f9d]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b057c8c]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 183
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b057c8c]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b057c8c]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@53f48368]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 183
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@53f48368]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@53f48368]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4c37b5b]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode,version FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 174(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ?,version = ? WHERE id = ? AND version = ? 
+DEBUG [main] - ==> Parameters: 美国2(String), US(String), 2(Integer), 174(Integer), 1(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode,version FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 174(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ?,version = ? WHERE id = ? AND version = ? 
+DEBUG [main] - ==> Parameters: 美国3(String), US(String), 3(Integer), 174(Integer), 2(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode,version FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 174(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ?,version = ? WHERE id = ? AND version = ? 
+DEBUG [main] - ==> Parameters: 美国4(String), US(String), 4(Integer), 174(Integer), 3(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode,version FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 174(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4c37b5b]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4c37b5b]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4c37b5b]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@75e01201]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: null, null, null
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: null, CN(String), 174(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@75e01201]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@75e01201]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@75e01201]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3829ac1]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: null, null, null
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3829ac1]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3829ac1]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3829ac1]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@22d6f11]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: null, null, null
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@22d6f11]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@22d6f11]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@22d6f11]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2453f95d]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: 美国(String), null, 174(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 174(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2453f95d]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2453f95d]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2453f95d]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@31e75d13]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@31e75d13]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@31e75d13]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@54227100]
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993432064001(Long), Angola(String), AO(String)
+DEBUG [main] - <==    Updates: 1
+1711851993432064001
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993434161153(Long), Afghanistan(String), AF(String)
+DEBUG [main] - <==    Updates: 1
+1711851993434161153
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993436258305(Long), Albania(String), AL(String)
+DEBUG [main] - <==    Updates: 1
+1711851993436258305
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993436258306(Long), Algeria(String), DZ(String)
+DEBUG [main] - <==    Updates: 1
+1711851993436258306
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993438355457(Long), Andorra(String), AD(String)
+DEBUG [main] - <==    Updates: 1
+1711851993438355457
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993439404033(Long), Anguilla(String), AI(String)
+DEBUG [main] - <==    Updates: 1
+1711851993439404033
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993440452609(Long), Antigua and Barbuda(String), AG(String)
+DEBUG [main] - <==    Updates: 1
+1711851993440452609
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993441501185(Long), Argentina(String), AR(String)
+DEBUG [main] - <==    Updates: 1
+1711851993441501185
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993441501186(Long), Armenia(String), AM(String)
+DEBUG [main] - <==    Updates: 1
+1711851993441501186
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993442549761(Long), Australia(String), AU(String)
+DEBUG [main] - <==    Updates: 1
+1711851993442549761
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993442549762(Long), Austria(String), AT(String)
+DEBUG [main] - <==    Updates: 1
+1711851993442549762
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993443598337(Long), Azerbaijan(String), AZ(String)
+DEBUG [main] - <==    Updates: 1
+1711851993443598337
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993443598338(Long), Bahamas(String), BS(String)
+DEBUG [main] - <==    Updates: 1
+1711851993443598338
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993444646913(Long), Bahrain(String), BH(String)
+DEBUG [main] - <==    Updates: 1
+1711851993444646913
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993444646914(Long), Bangladesh(String), BD(String)
+DEBUG [main] - <==    Updates: 1
+1711851993444646914
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993445695489(Long), Barbados(String), BB(String)
+DEBUG [main] - <==    Updates: 1
+1711851993445695489
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993446744065(Long), Belarus(String), BY(String)
+DEBUG [main] - <==    Updates: 1
+1711851993446744065
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993446744066(Long), Belgium(String), BE(String)
+DEBUG [main] - <==    Updates: 1
+1711851993446744066
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993447792641(Long), Belize(String), BZ(String)
+DEBUG [main] - <==    Updates: 1
+1711851993447792641
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993447792642(Long), Benin(String), BJ(String)
+DEBUG [main] - <==    Updates: 1
+1711851993447792642
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993448841217(Long), Bermuda Is.(String), BM(String)
+DEBUG [main] - <==    Updates: 1
+1711851993448841217
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993448841218(Long), Bolivia(String), BO(String)
+DEBUG [main] - <==    Updates: 1
+1711851993448841218
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993448841219(Long), Botswana(String), BW(String)
+DEBUG [main] - <==    Updates: 1
+1711851993448841219
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993449889793(Long), Brazil(String), BR(String)
+DEBUG [main] - <==    Updates: 1
+1711851993449889793
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993451986945(Long), Brunei(String), BN(String)
+DEBUG [main] - <==    Updates: 1
+1711851993451986945
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993453035521(Long), Bulgaria(String), BG(String)
+DEBUG [main] - <==    Updates: 1
+1711851993453035521
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993454084097(Long), Burkina-faso(String), BF(String)
+DEBUG [main] - <==    Updates: 1
+1711851993454084097
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993454084098(Long), Burma(String), MM(String)
+DEBUG [main] - <==    Updates: 1
+1711851993454084098
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993457229825(Long), Burundi(String), BI(String)
+DEBUG [main] - <==    Updates: 1
+1711851993457229825
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993458278401(Long), Cameroon(String), CM(String)
+DEBUG [main] - <==    Updates: 1
+1711851993458278401
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993458278402(Long), Canada(String), CA(String)
+DEBUG [main] - <==    Updates: 1
+1711851993458278402
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993459326977(Long), Central African Republic(String), CF(String)
+DEBUG [main] - <==    Updates: 1
+1711851993459326977
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993459326978(Long), Chad(String), TD(String)
+DEBUG [main] - <==    Updates: 1
+1711851993459326978
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993459326979(Long), Chile(String), CL(String)
+DEBUG [main] - <==    Updates: 1
+1711851993459326979
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1711851993460375553(Long), China(String), CN(String)
+DEBUG [main] - <==    Updates: 1
+1711851993460375553
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@54227100]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@54227100]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@54227100]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@56276db8]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@56276db8]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@56276db8]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2692b61e]
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 04f3f83b-8f8d-43f9-80a7-53bab0b08858(String), Angola(String), AO(String)
+DEBUG [main] - <==    Updates: 1
+04f3f83b-8f8d-43f9-80a7-53bab0b08858
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 2c7afb88-bff2-40b0-a65f-45e57d151ac3(String), Afghanistan(String), AF(String)
+DEBUG [main] - <==    Updates: 1
+2c7afb88-bff2-40b0-a65f-45e57d151ac3
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: f7e75b78-0042-4e19-905c-d2d35efbf37d(String), Albania(String), AL(String)
+DEBUG [main] - <==    Updates: 1
+f7e75b78-0042-4e19-905c-d2d35efbf37d
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 7a2acb7a-c872-4d91-9560-85f88ab0256b(String), Algeria(String), DZ(String)
+DEBUG [main] - <==    Updates: 1
+7a2acb7a-c872-4d91-9560-85f88ab0256b
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 7721d001-b3fc-45da-b194-b3e5e59de22f(String), Andorra(String), AD(String)
+DEBUG [main] - <==    Updates: 1
+7721d001-b3fc-45da-b194-b3e5e59de22f
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 25523921-615b-4f06-884c-778c1ed4f50f(String), Anguilla(String), AI(String)
+DEBUG [main] - <==    Updates: 1
+25523921-615b-4f06-884c-778c1ed4f50f
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: d70c76d9-2a11-4660-acfd-b4e188ffff25(String), Antigua and Barbuda(String), AG(String)
+DEBUG [main] - <==    Updates: 1
+d70c76d9-2a11-4660-acfd-b4e188ffff25
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 7c29546f-b42a-42e7-87f7-b677e3000b32(String), Argentina(String), AR(String)
+DEBUG [main] - <==    Updates: 1
+7c29546f-b42a-42e7-87f7-b677e3000b32
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 8ffe831f-fd83-47c1-b0d8-1b42204ea81d(String), Armenia(String), AM(String)
+DEBUG [main] - <==    Updates: 1
+8ffe831f-fd83-47c1-b0d8-1b42204ea81d
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 189929ec-41fc-41a3-8519-45f2a96e8284(String), Australia(String), AU(String)
+DEBUG [main] - <==    Updates: 1
+189929ec-41fc-41a3-8519-45f2a96e8284
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 5e595a62-4722-4c6a-a0aa-4e6a2e467822(String), Austria(String), AT(String)
+DEBUG [main] - <==    Updates: 1
+5e595a62-4722-4c6a-a0aa-4e6a2e467822
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: dcdd97d3-a6d5-4fd7-9fb5-81e2670e53a8(String), Azerbaijan(String), AZ(String)
+DEBUG [main] - <==    Updates: 1
+dcdd97d3-a6d5-4fd7-9fb5-81e2670e53a8
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: f72d0ddc-c06a-4554-9e3b-49eabce8e31b(String), Bahamas(String), BS(String)
+DEBUG [main] - <==    Updates: 1
+f72d0ddc-c06a-4554-9e3b-49eabce8e31b
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 5e405231-65e2-4a76-ab2a-96a292b1b18b(String), Bahrain(String), BH(String)
+DEBUG [main] - <==    Updates: 1
+5e405231-65e2-4a76-ab2a-96a292b1b18b
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 80446dfa-28ca-4d0f-9b22-2ad2279bc46c(String), Bangladesh(String), BD(String)
+DEBUG [main] - <==    Updates: 1
+80446dfa-28ca-4d0f-9b22-2ad2279bc46c
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: d71e4f0b-e95e-4dd2-af0f-8aefdafe0642(String), Barbados(String), BB(String)
+DEBUG [main] - <==    Updates: 1
+d71e4f0b-e95e-4dd2-af0f-8aefdafe0642
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: c6269e35-1b0e-4949-9bc3-54f411ebf6b1(String), Belarus(String), BY(String)
+DEBUG [main] - <==    Updates: 1
+c6269e35-1b0e-4949-9bc3-54f411ebf6b1
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: a3ff9561-a54f-4dfd-b7eb-8e09a12f178d(String), Belgium(String), BE(String)
+DEBUG [main] - <==    Updates: 1
+a3ff9561-a54f-4dfd-b7eb-8e09a12f178d
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 96c03968-c1a2-48dc-a696-32cb94d9b899(String), Belize(String), BZ(String)
+DEBUG [main] - <==    Updates: 1
+96c03968-c1a2-48dc-a696-32cb94d9b899
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 03fe0120-11d4-438e-934b-32d5c64ccc6c(String), Benin(String), BJ(String)
+DEBUG [main] - <==    Updates: 1
+03fe0120-11d4-438e-934b-32d5c64ccc6c
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: b54a9425-6c03-4cc4-8717-aae222c611c1(String), Bermuda Is.(String), BM(String)
+DEBUG [main] - <==    Updates: 1
+b54a9425-6c03-4cc4-8717-aae222c611c1
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: f62316e4-f76b-4cee-8d98-1362c58e7744(String), Bolivia(String), BO(String)
+DEBUG [main] - <==    Updates: 1
+f62316e4-f76b-4cee-8d98-1362c58e7744
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: bea94b5b-4a4b-43fb-8a77-98d3900b80df(String), Botswana(String), BW(String)
+DEBUG [main] - <==    Updates: 1
+bea94b5b-4a4b-43fb-8a77-98d3900b80df
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: f5db43b7-f2c4-4e45-b232-6eec1e16365d(String), Brazil(String), BR(String)
+DEBUG [main] - <==    Updates: 1
+f5db43b7-f2c4-4e45-b232-6eec1e16365d
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 4c1b4b5c-3044-4d96-892f-e0a351dfe097(String), Brunei(String), BN(String)
+DEBUG [main] - <==    Updates: 1
+4c1b4b5c-3044-4d96-892f-e0a351dfe097
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: a23cf929-b204-41fb-9f59-5dde6ce8daa9(String), Bulgaria(String), BG(String)
+DEBUG [main] - <==    Updates: 1
+a23cf929-b204-41fb-9f59-5dde6ce8daa9
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 6ccb81b3-da7e-43e4-acb9-9b823705ee66(String), Burkina-faso(String), BF(String)
+DEBUG [main] - <==    Updates: 1
+6ccb81b3-da7e-43e4-acb9-9b823705ee66
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 62102291-0a6f-49cf-80f8-eeb889949e03(String), Burma(String), MM(String)
+DEBUG [main] - <==    Updates: 1
+62102291-0a6f-49cf-80f8-eeb889949e03
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 487f1db9-f2dc-43bb-9d8b-eaf2ffd0babf(String), Burundi(String), BI(String)
+DEBUG [main] - <==    Updates: 1
+487f1db9-f2dc-43bb-9d8b-eaf2ffd0babf
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 9dfbef60-c8f2-4055-b9e9-23f553cbf3d0(String), Cameroon(String), CM(String)
+DEBUG [main] - <==    Updates: 1
+9dfbef60-c8f2-4055-b9e9-23f553cbf3d0
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: b7f78e37-9f3c-4aae-b551-0d476a491fb6(String), Canada(String), CA(String)
+DEBUG [main] - <==    Updates: 1
+b7f78e37-9f3c-4aae-b551-0d476a491fb6
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 223f8fbc-0b0d-4a25-8a84-b04daa29f4c5(String), Central African Republic(String), CF(String)
+DEBUG [main] - <==    Updates: 1
+223f8fbc-0b0d-4a25-8a84-b04daa29f4c5
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 2b20758d-ecaa-432d-93aa-5ad34417cec1(String), Chad(String), TD(String)
+DEBUG [main] - <==    Updates: 1
+2b20758d-ecaa-432d-93aa-5ad34417cec1
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 5d0a8da6-c319-40b3-bd7b-84df0d8558da(String), Chile(String), CL(String)
+DEBUG [main] - <==    Updates: 1
+5d0a8da6-c319-40b3-bd7b-84df0d8558da
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: fb962b87-d6b0-4d50-8074-6b468ef49180(String), China(String), CN(String)
+DEBUG [main] - <==    Updates: 1
+fb962b87-d6b0-4d50-8074-6b468ef49180
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2692b61e]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2692b61e]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2692b61e]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4c51bb7]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4c51bb7]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4c51bb7]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b080f3a]
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 9999(Long), test(String), T(String)
+DEBUG [main] - <==    Updates: 1
+9999
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b080f3a]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b080f3a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b080f3a]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@470a696f]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(*) FROM country WHERE ( ( countryname like ? ) or ( id > ? ) ) 
+DEBUG [main] - ==> Parameters: A%(String), 100(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@470a696f]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@470a696f]
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at tk.mybatis.mapper.test.example.TestSelectCountByExample.testSelectCountByExample2(TestSelectCountByExample.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)

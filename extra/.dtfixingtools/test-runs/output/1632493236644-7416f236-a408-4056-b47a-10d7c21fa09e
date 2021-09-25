@@ -1,0 +1,330 @@
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.ibatis.reflection.Reflector (file:/home/talank/.m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar) to method java.lang.Class.checkPackageAccess(java.lang.SecurityManager,java.lang.ClassLoader,boolean)
+WARNING: Please consider reporting this to the maintainers of org.apache.ibatis.reflection.Reflector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b3f61ff]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b3f61ff]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b3f61ff]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60129b9a]
+DEBUG [main] - ==>  Preparing: SELECT id,name,price,published FROM book WHERE price = ? 
+DEBUG [main] - ==> Parameters: 50(Integer)
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60129b9a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60129b9a]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@25aca718]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@25aca718]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@25aca718]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f1de2d6]
+DEBUG [main] - ==>  Preparing: SELECT id,name,price,published FROM book WHERE price in( ? , ? ) 
+DEBUG [main] - ==> Parameters: 50(Integer), 80(Integer)
+DEBUG [main] - <==      Total: 3
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f1de2d6]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f1de2d6]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@16414e40]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@16414e40]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@16414e40]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@46dffdc3]
+DEBUG [main] - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM book WHERE price = ? 
+DEBUG [main] - ==> Parameters: 50(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@46dffdc3]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@46dffdc3]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@db57326]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@db57326]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@db57326]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4b14918a]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM book WHERE price = ? 
+DEBUG [main] - ==> Parameters: 50(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4b14918a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4b14918a]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6dee4f1b]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6dee4f1b]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6dee4f1b]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@421bba99]
+DEBUG [main] - ==>  Preparing: SELECT id,name,price,published FROM book WHERE published between ? and ? 
+DEBUG [main] - ==> Parameters: 2015-11-11(Date), 2019-11-11(Date)
+DEBUG [main] - <==      Total: 4
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@421bba99]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@421bba99]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@517d4a0d]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@517d4a0d]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@517d4a0d]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1941a8ff]
+DEBUG [main] - ==>  Preparing: SELECT id,name,price,published FROM book WHERE name = ? 
+DEBUG [main] - ==> Parameters: JavaStarter1(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1941a8ff]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1941a8ff]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@13d9b21f]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@13d9b21f]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@13d9b21f]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@13d73fa]
+DEBUG [main] - ==>  Preparing: SELECT SUM(id) AS aggregation FROM user 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@13d73fa]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@13d73fa]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3e30646a]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3e30646a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3e30646a]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3ed242a4]
+DEBUG [main] - ==>  Preparing: SELECT MAX(id) AS aggregation, role AS role FROM user GROUP BY role order by role desc 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3ed242a4]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3ed242a4]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2d96543c]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2d96543c]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2d96543c]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7d64e326]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) AS total, role AS role FROM user GROUP BY role 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7d64e326]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7d64e326]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@32193bea]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@32193bea]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@32193bea]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@69653e16]
+DEBUG [main] - ==>  Preparing: SELECT MIN(id) AS aggregation FROM user 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@69653e16]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@69653e16]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@49d3c823]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@49d3c823]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@49d3c823]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5fe1ce85]
+DEBUG [main] - ==>  Preparing: SELECT AVG(id) AS id FROM user 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5fe1ce85]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5fe1ce85]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3bcbb589]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3bcbb589]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3bcbb589]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@53d102a2]
+DEBUG [main] - ==>  Preparing: select * from country where id = ? 
+DEBUG [main] - ==> Parameters: 1(Long)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: Newer(String), 1(Long)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: select * from country where id = ? 
+DEBUG [main] - ==> Parameters: 1(Long)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@53d102a2]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@53d102a2]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@53d102a2]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@37efd131]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@37efd131]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@37efd131]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60957c0f]
+DEBUG [main] - ==>  Preparing: SELECT id,name,price,published,is_deleted FROM course WHERE is_deleted = 0 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 4
+DEBUG [main] - ==>  Preparing: UPDATE course SET is_deleted = 1 WHERE price in( ? , ? , ? ) AND is_deleted = 0 
+DEBUG [main] - ==> Parameters: 50(Integer), 80(Integer), 100(Integer)
+DEBUG [main] - <==    Updates: 4
+DEBUG [main] - ==>  Preparing: SELECT id,name,price,published,is_deleted FROM course WHERE is_deleted = 0 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60957c0f]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60957c0f]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60957c0f]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5cbe877d]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5cbe877d]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5cbe877d]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4cf8b2dc]
+DEBUG [main] - ==>  Preparing: SELECT id,name,price,published,is_deleted FROM course WHERE is_deleted = 0 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 4
+DEBUG [main] - ==>  Preparing: UPDATE course SET is_deleted = 1 WHERE price between ? and ? AND is_deleted = 0 
+DEBUG [main] - ==> Parameters: 80(Integer), 100(Integer)
+DEBUG [main] - <==    Updates: 2
+DEBUG [main] - ==>  Preparing: SELECT id,name,price,published,is_deleted FROM course WHERE is_deleted = 0 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4cf8b2dc]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4cf8b2dc]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4cf8b2dc]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3d9f6567]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3d9f6567]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3d9f6567]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@35e5d0e5]
+DEBUG [main] - ==>  Preparing: SELECT id,name,price,published,is_deleted FROM course WHERE id = ? AND is_deleted = 0 
+DEBUG [main] - ==> Parameters: 2(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: UPDATE course SET is_deleted = 1 WHERE name = ? 
+DEBUG [main] - ==> Parameters: JavaStarter2(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,name,price,published,is_deleted FROM course WHERE id = ? AND is_deleted = 0 
+DEBUG [main] - ==> Parameters: 2(Integer)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@35e5d0e5]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@35e5d0e5]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@35e5d0e5]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@52d239ba]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@52d239ba]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@52d239ba]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@64a8c844]
+DEBUG [main] - ==>  Preparing: UPDATE country_int SET countryname = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: 英国(String), 174(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country_int WHERE id = ? 
+DEBUG [main] - ==> Parameters: 174(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@64a8c844]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@64a8c844]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@64a8c844]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@68ad99fe]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@68ad99fe]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@68ad99fe]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@781f10f2]
+DEBUG [main] - ==>  Preparing: UPDATE country_int SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: null, null, 174(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country_int WHERE id = ? 
+DEBUG [main] - ==> Parameters: 174(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@781f10f2]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@781f10f2]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@781f10f2]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@47a5b70d]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@47a5b70d]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@47a5b70d]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5286c33a]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE id in (?,?,?) 
+DEBUG [main] - ==> Parameters: 1(Long), 2(Long), 3(Long)
+DEBUG [main] - <==      Total: 3
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id in (?,?,?) 
+DEBUG [main] - ==> Parameters: 1(Long), 2(Long), 3(Long)
+DEBUG [main] - <==    Updates: 3
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE id in (?,?,?) 
+DEBUG [main] - ==> Parameters: 1(Long), 2(Long), 3(Long)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5286c33a]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5286c33a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5286c33a]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4e70a728]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4e70a728]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4e70a728]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@73dce0e6]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@73dce0e6]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@73dce0e6]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4795ded0]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 183
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4795ded0]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4795ded0]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@31e4bb20]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@31e4bb20]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@31e4bb20]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3381b4fc]
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,role ) VALUES ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) , ( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 0d2ad86e-d60f-4318-a31e-459df9cff20f(String), Angola(String), AO(String), f4f9bfe7-bece-471e-a0f1-60e482781409(String), Afghanistan(String), AF(String), 192b681c-1788-4d31-ac2a-06e392463cbf(String), Albania(String), AL(String), 18929fd9-ffac-46c3-aa0a-245baa0b4ce5(String), Algeria(String), DZ(String), 4cae2345-aa1a-49cb-9603-550b75fb32ab(String), Andorra(String), AD(String), c83c6b28-a27c-470d-85b8-716ada70b128(String), Anguilla(String), AI(String), 261cfaab-8cb8-46c3-8e08-d0306225c88c(String), Antigua and Barbuda(String), AG(String), b31e4def-cfed-4be0-bce2-49780aee25a5(String), Argentina(String), AR(String), 2e089f12-b78b-4af5-979e-8b2d4ca050cd(String), Armenia(String), AM(String), e4a1ca2f-4410-4b92-8e7a-d57d6e2894ee(String), Australia(String), AU(String), 6e1a6ac4-3acb-444d-90cf-d9276f6e21dd(String), Austria(String), AT(String), 4edc68b3-0a50-4998-bb71-e59143c3a121(String), Azerbaijan(String), AZ(String), eecc3c19-bd22-4de7-98be-4b98241ad3e3(String), Bahamas(String), BS(String), a5d7e5f3-914d-46a2-ae73-3e0ff6c8465a(String), Bahrain(String), BH(String), 9e9e7063-a22f-40f6-91ed-44c5c02944ad(String), Bangladesh(String), BD(String), ccf3ca40-bf6f-407b-bff5-0b9ad1d6b702(String), Barbados(String), BB(String), 8297c8c0-1fb7-43d3-bfc3-997b8956a786(String), Belarus(String), BY(String), 424188f0-2758-46cf-bb22-e4dd86fc98d1(String), Belgium(String), BE(String), 1a43d358-6c03-4a8f-9ee0-7f435d22cf81(String), Belize(String), BZ(String), 9637be60-258d-4412-9654-ad1e93600c33(String), Benin(String), BJ(String), b85e5a8e-315e-45d7-861a-028d1771ceb3(String), Bermuda Is.(String), BM(String), a058ff76-e743-44f6-a351-4c046d884dd0(String), Bolivia(String), BO(String), c871bcb1-dba3-4311-93a9-7dbdd3d21cb1(String), Botswana(String), BW(String), ed937dff-1705-424e-a08c-ead6c9861e4e(String), Brazil(String), BR(String), 4afe035d-7571-459f-9bc0-62831def56ee(String), Brunei(String), BN(String), 2f79406b-4dbe-4ba0-881c-544a003480ad(String), Bulgaria(String), BG(String), 4da65c74-d101-4b3a-a479-6ee85e95e627(String), Burkina-faso(String), BF(String), 452d68c2-7646-476c-a6a9-6e163fd23510(String), Burma(String), MM(String), cbbdb939-153b-41a6-8c95-f3f88b61727e(String), Burundi(String), BI(String), 2a5c2d7d-836f-45d2-91fc-45b5ac6b0575(String), Cameroon(String), CM(String), d7e49337-56ec-446f-918f-c79beb6b5d38(String), Canada(String), CA(String), 2338ee99-140e-48fb-bb82-179f1aef60fa(String), Central African Republic(String), CF(String), 18f3d0cf-4ee0-4086-a042-d9c123561c4d(String), Chad(String), TD(String), 8577fcc1-480c-4429-832b-d9704ec4acff(String), Chile(String), CL(String), d85d5d29-864c-4d67-88d7-7c2db1aad98c(String), China(String), CN(String)
+DEBUG [main] - <==    Updates: 35
+0d2ad86e-d60f-4318-a31e-459df9cff20f
+f4f9bfe7-bece-471e-a0f1-60e482781409
+192b681c-1788-4d31-ac2a-06e392463cbf
+18929fd9-ffac-46c3-aa0a-245baa0b4ce5
+4cae2345-aa1a-49cb-9603-550b75fb32ab
+c83c6b28-a27c-470d-85b8-716ada70b128
+261cfaab-8cb8-46c3-8e08-d0306225c88c
+b31e4def-cfed-4be0-bce2-49780aee25a5
+2e089f12-b78b-4af5-979e-8b2d4ca050cd
+e4a1ca2f-4410-4b92-8e7a-d57d6e2894ee
+6e1a6ac4-3acb-444d-90cf-d9276f6e21dd
+4edc68b3-0a50-4998-bb71-e59143c3a121
+eecc3c19-bd22-4de7-98be-4b98241ad3e3
+a5d7e5f3-914d-46a2-ae73-3e0ff6c8465a
+9e9e7063-a22f-40f6-91ed-44c5c02944ad
+ccf3ca40-bf6f-407b-bff5-0b9ad1d6b702
+8297c8c0-1fb7-43d3-bfc3-997b8956a786
+424188f0-2758-46cf-bb22-e4dd86fc98d1
+1a43d358-6c03-4a8f-9ee0-7f435d22cf81
+9637be60-258d-4412-9654-ad1e93600c33
+b85e5a8e-315e-45d7-861a-028d1771ceb3
+a058ff76-e743-44f6-a351-4c046d884dd0
+c871bcb1-dba3-4311-93a9-7dbdd3d21cb1
+ed937dff-1705-424e-a08c-ead6c9861e4e
+4afe035d-7571-459f-9bc0-62831def56ee
+2f79406b-4dbe-4ba0-881c-544a003480ad
+4da65c74-d101-4b3a-a479-6ee85e95e627
+452d68c2-7646-476c-a6a9-6e163fd23510
+cbbdb939-153b-41a6-8c95-f3f88b61727e
+2a5c2d7d-836f-45d2-91fc-45b5ac6b0575
+d7e49337-56ec-446f-918f-c79beb6b5d38
+2338ee99-140e-48fb-bb82-179f1aef60fa
+18f3d0cf-4ee0-4086-a042-d9c123561c4d
+8577fcc1-480c-4429-832b-d9704ec4acff
+d85d5d29-864c-4d67-88d7-7c2db1aad98c
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3381b4fc]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3381b4fc]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3381b4fc]
