@@ -21,81 +21,150 @@
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   ~ THE SOFTWARE.
   --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-        
+            
+    
     <modelVersion>4.0.0</modelVersion>
-        
+            
+    
     <parent>
-                
+                        
+        
         <groupId>tk.mybatis</groupId>
-                
+                        
+        
         <artifactId>mapper-all</artifactId>
-                
+                        
+        
         <version>4.1.5</version>
-            
+                    
+    
     </parent>
-        
-    <artifactId>mapper-all-dependencies</artifactId>
-        
-    <packaging>jar</packaging>
-        
-    <name>dependencies</name>
-        
-    <description>Mybatis 通用 Mapper Jar 集成</description>
-        
-    <dependencies>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-core</artifactId>
-                    
-        </dependency>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-base</artifactId>
-                    
-        </dependency>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-extra</artifactId>
-                    
-        </dependency>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-spring</artifactId>
-                    
-        </dependency>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-weekend</artifactId>
-                    
-        </dependency>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-generator</artifactId>
-                    
-        </dependency>
             
+    
+    <artifactId>mapper-all-dependencies</artifactId>
+            
+    
+    <packaging>jar</packaging>
+            
+    
+    <name>dependencies</name>
+            
+    
+    <description>Mybatis 通用 Mapper Jar 集成</description>
+            
+    
+    <dependencies>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-core</artifactId>
+                                
+        
+        </dependency>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-base</artifactId>
+                                
+        
+        </dependency>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-extra</artifactId>
+                                
+        
+        </dependency>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-spring</artifactId>
+                                
+        
+        </dependency>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-weekend</artifactId>
+                                
+        
+        </dependency>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-generator</artifactId>
+                                
+        
+        </dependency>
+                    
+    
     </dependencies>
+        
     
     <build>
+                
         <plugins>
+                        
+            <plugin>
+                                
+                <groupId>edu.illinois.cs</groupId>
+                                
+                <artifactId>testrunner-maven-plugin</artifactId>
+                                
+                <version>1.2</version>
+                                
+                <dependencies>
+                                        
+                    <dependency>
+                                                
+                        <groupId>edu.illinois.cs</groupId>
+                                                
+                        <artifactId>idflakies</artifactId>
+                                                
+                        <version>1.1.0</version>
+                                            
+                    </dependency>
+                                    
+                </dependencies>
+                                
+                <configuration>
+                                        
+                    <className>edu.illinois.cs.dt.tools.detection.DetectorPlugin</className>
+                                    
+                </configuration>
+                            
+            </plugin>
+                    
             <plugin>
                 <groupId>edu.illinois.cs</groupId>
                 <artifactId>testrunner-maven-plugin</artifactId>
@@ -103,15 +172,17 @@
                 <dependencies>
                     <dependency>
                         <groupId>edu.illinois.cs</groupId>
-                        <artifactId>idflakies</artifactId>
-                        <version>1.1.0</version>
+                        <artifactId>ifixflakies</artifactId>
+                        <version>1.0.0-SNAPSHOT</version>
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <className>edu.illinois.cs.dt.tools.detection.DetectorPlugin</className>
+                    <className>edu.illinois.cs.dt.tools.fixer.CleanerFixerPlugin</className>
                 </configuration>
             </plugin>
         </plugins>
+            
     </build>
+    
 </project>
 

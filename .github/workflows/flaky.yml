@@ -13,10 +13,10 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2
-      - name: Set up JDK 14
+      - name: Set up JDK 8
         uses: actions/setup-java@v1
         with:
-          java-version: 14
+          java-version: 8
       - name: Cache Maven packages
         uses: actions/cache@v2
         with:
@@ -25,5 +25,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Run tests with Maven
         run: |
+          mvn -version
           cd base
           mvn testrunner:testplugin

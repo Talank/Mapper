@@ -21,154 +21,260 @@
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   ~ THE SOFTWARE.
   --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-        
+            
+    
     <modelVersion>4.0.0</modelVersion>
-        
+            
+    
     <parent>
-                
+                        
+        
         <groupId>tk.mybatis</groupId>
-                
+                        
+        
         <artifactId>mapper-all</artifactId>
-                
+                        
+        
         <version>4.1.5</version>
-            
+                    
+    
     </parent>
-        
-    <artifactId>mapper</artifactId>
-        
-    <packaging>jar</packaging>
-        
-    <name>mapper</name>
-        
-    <description>Mybatis 通用 Mapper Jar 集成</description>
-        
-    <dependencies>
-                
-        <!--必须依赖-->
-                
-        <dependency>
-                        
-            <groupId>javax.persistence</groupId>
-                        
-            <artifactId>persistence-api</artifactId>
-                    
-        </dependency>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-core</artifactId>
-                        
-            <optional>true</optional>
-                    
-        </dependency>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-base</artifactId>
-                        
-            <optional>true</optional>
-                    
-        </dependency>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-extra</artifactId>
-                        
-            <optional>true</optional>
-                    
-        </dependency>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-spring</artifactId>
-                        
-            <optional>true</optional>
-                    
-        </dependency>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-weekend</artifactId>
-                        
-            <optional>true</optional>
-                    
-        </dependency>
-                
-        <dependency>
-                        
-            <groupId>tk.mybatis</groupId>
-                        
-            <artifactId>mapper-generator</artifactId>
-                        
-            <optional>true</optional>
-                    
-        </dependency>
             
-    </dependencies>
-        
-    <build>
-                
-        <plugins>
+    
+    <artifactId>mapper</artifactId>
+            
+    
+    <packaging>jar</packaging>
+            
+    
+    <name>mapper</name>
+            
+    
+    <description>Mybatis 通用 Mapper Jar 集成</description>
+            
+    
+    <dependencies>
                         
+        
+        <!--必须依赖-->
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>javax.persistence</groupId>
+                                    
+            
+            <artifactId>persistence-api</artifactId>
+                                
+        
+        </dependency>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-core</artifactId>
+                                    
+            
+            <optional>true</optional>
+                                
+        
+        </dependency>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-base</artifactId>
+                                    
+            
+            <optional>true</optional>
+                                
+        
+        </dependency>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-extra</artifactId>
+                                    
+            
+            <optional>true</optional>
+                                
+        
+        </dependency>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-spring</artifactId>
+                                    
+            
+            <optional>true</optional>
+                                
+        
+        </dependency>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-weekend</artifactId>
+                                    
+            
+            <optional>true</optional>
+                                
+        
+        </dependency>
+                        
+        
+        <dependency>
+                                    
+            
+            <groupId>tk.mybatis</groupId>
+                                    
+            
+            <artifactId>mapper-generator</artifactId>
+                                    
+            
+            <optional>true</optional>
+                                
+        
+        </dependency>
+                    
+    
+    </dependencies>
+            
+    
+    <build>
+                        
+        
+        <plugins>
+                                    
+            
+            <plugin>
+                                                
+                
+                <groupId>org.apache.maven.plugins</groupId>
+                                                
+                
+                <artifactId>maven-shade-plugin</artifactId>
+                                                
+                
+                <executions>
+                                                            
+                    
+                    <execution>
+                                                                        
+                        
+                        <phase>package</phase>
+                                                                        
+                        
+                        <goals>
+                                                                                    
+                            
+                            <goal>shade</goal>
+                                                                                
+                        
+                        </goals>
+                                                                        
+                        
+                        <configuration>
+                                                                                    
+                            
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
+                                                                                    
+                            
+                            <createSourcesJar>true</createSourcesJar>
+                                                                                    
+                            
+                            <artifactSet>
+                                                                                                
+                                
+                                <includes>
+                                                                                                            
+                                    
+                                    <include>tk.mybatis:mapper-core</include>
+                                                                                                            
+                                    
+                                    <include>tk.mybatis:mapper-base</include>
+                                                                                                            
+                                    
+                                    <include>tk.mybatis:mapper-extra</include>
+                                                                                                            
+                                    
+                                    <include>tk.mybatis:mapper-spring</include>
+                                                                                                            
+                                    
+                                    <include>tk.mybatis:mapper-weekend</include>
+                                                                                                            
+                                    
+                                    <include>tk.mybatis:mapper-generator</include>
+                                                                                                        
+                                
+                                </includes>
+                                                                                            
+                            
+                            </artifactSet>
+                                                                                
+                        
+                        </configuration>
+                                                                    
+                    
+                    </execution>
+                                                        
+                
+                </executions>
+                                            
+            
+            </plugin>
+                                
+            
             <plugin>
                                 
-                <groupId>org.apache.maven.plugins</groupId>
+                <groupId>edu.illinois.cs</groupId>
                                 
-                <artifactId>maven-shade-plugin</artifactId>
+                <artifactId>testrunner-maven-plugin</artifactId>
                                 
-                <executions>
+                <version>1.2</version>
+                                
+                <dependencies>
                                         
-                    <execution>
+                    <dependency>
                                                 
-                        <phase>package</phase>
+                        <groupId>edu.illinois.cs</groupId>
                                                 
-                        <goals>
-                                                        
-                            <goal>shade</goal>
-                                                    
-                        </goals>
+                        <artifactId>idflakies</artifactId>
                                                 
-                        <configuration>
-                                                        
-                            <createDependencyReducedPom>false</createDependencyReducedPom>
-                                                        
-                            <createSourcesJar>true</createSourcesJar>
-                                                        
-                            <artifactSet>
-                                                                
-                                <includes>
-                                                                        
-                                    <include>tk.mybatis:mapper-core</include>
-                                                                        
-                                    <include>tk.mybatis:mapper-base</include>
-                                                                        
-                                    <include>tk.mybatis:mapper-extra</include>
-                                                                        
-                                    <include>tk.mybatis:mapper-spring</include>
-                                                                        
-                                    <include>tk.mybatis:mapper-weekend</include>
-                                                                        
-                                    <include>tk.mybatis:mapper-generator</include>
-                                                                    
-                                </includes>
-                                                            
-                            </artifactSet>
-                                                    
-                        </configuration>
+                        <version>1.1.0</version>
                                             
-                    </execution>
+                    </dependency>
                                     
-                </executions>
+                </dependencies>
+                                
+                <configuration>
+                                        
+                    <className>edu.illinois.cs.dt.tools.detection.DetectorPlugin</className>
+                                    
+                </configuration>
                             
             </plugin>
                     
@@ -179,17 +285,19 @@
                 <dependencies>
                     <dependency>
                         <groupId>edu.illinois.cs</groupId>
-                        <artifactId>idflakies</artifactId>
-                        <version>1.1.0</version>
+                        <artifactId>ifixflakies</artifactId>
+                        <version>1.0.0-SNAPSHOT</version>
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <className>edu.illinois.cs.dt.tools.detection.DetectorPlugin</className>
+                    <className>edu.illinois.cs.dt.tools.fixer.CleanerFixerPlugin</className>
                 </configuration>
             </plugin>
         </plugins>
-            
-    </build>
+                    
     
+    </build>
+        
+
 </project>
 
