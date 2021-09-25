@@ -11,15 +11,17 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - name: Setup Java
-        uses: actions/setup-java@v2
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+      - name: Set up JDK 14
+        uses: actions/setup-java@v1
         with:
-          distribution: 'adopt'
-          java-package: jdk
-          java-version: 8
-      - name: checkout
-        uses: actions/checkout@main
-      - name: compile and run
-        working-directory: github-actions-java-maven
-        run: |
-          pwd
+          java-version: 14
+      - name: Cache Maven packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+      - name: Run tests with Maven
+        run: mvn -B test --file pom.xml
