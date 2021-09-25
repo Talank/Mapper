@@ -1,0 +1,25 @@
+name: run flaky fixer
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs: 
+  test:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-package: jdk
+          java-version: 8
+      - name: checkout
+        uses: actions/checkout@main
+      - name: compile and run
+        working-directory: github-actions-java-maven
+        run: |
+          pwd
