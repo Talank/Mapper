@@ -21,8 +21,7 @@ jobs:
           java-version: 11
       - name: setup package not available in maven repository
         run: |
-          envsubst < .github/library/ifixflakies-1.0.0-SNAPSHOT.jar > /home/talank/browsing/playground/iFixFlakies/target/ifixflakies-1.0.0-SNAPSHOT.jar
-          mvn install:install-file -Dfile=/home/talank/browsing/playground/iFixFlakies/target/ifixflakies-1.0.0-SNAPSHOT.jar -DgroupId=edu.illinois.cs -DartifactId=ifixflakies -Dversion=1.0.0-SNAPSHOT -Dpackaging=jar
+          mvn install:install-file -Dfile=.github/library/ifixflakies-1.0.0-SNAPSHOT.jar -DgroupId=edu.illinois.cs -DartifactId=ifixflakies -Dversion=1.0.0-SNAPSHOT -Dpackaging=jar
       - name: compile and run
         working-directory: github-actions-java-maven
         run: mvn testrunner:testplugin
