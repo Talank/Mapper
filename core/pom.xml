@@ -20,34 +20,72 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   ~ THE SOFTWARE.
-  -->
-
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        
     <modelVersion>4.0.0</modelVersion>
+        
     <parent>
+                
         <groupId>tk.mybatis</groupId>
+                
         <artifactId>mapper-modules</artifactId>
+                
         <version>1.1.5</version>
+            
     </parent>
+        
     <artifactId>mapper-core</artifactId>
+        
     <packaging>jar</packaging>
-
+        
     <name>mapper-core</name>
+        
     <description>Mybatis 通用 Mapper</description>
+        
     <url>https://mybatis.io</url>
-
+        
     <dependencies>
+                
         <!--必须依赖-->
+                
         <dependency>
+                        
             <groupId>javax.persistence</groupId>
+                        
             <artifactId>persistence-api</artifactId>
+                    
         </dependency>
-
+                
         <!--可选依赖-->
+                
         <dependency>
+                        
             <groupId>org.mybatis</groupId>
+                        
             <artifactId>mybatis</artifactId>
+                    
         </dependency>
+            
     </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>edu.illinois.cs</groupId>
+                <artifactId>testrunner-maven-plugin</artifactId>
+                <version>1.2</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>edu.illinois.cs</groupId>
+                        <artifactId>idflakies</artifactId>
+                        <version>1.1.0</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <className>edu.illinois.cs.dt.tools.detection.DetectorPlugin</className>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
+

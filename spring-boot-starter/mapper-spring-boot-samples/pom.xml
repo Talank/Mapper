@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~ The MIT License (MIT)
   ~
@@ -21,41 +20,92 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   ~ THE SOFTWARE.
-  -->
-
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        
     <modelVersion>4.0.0</modelVersion>
+        
     <parent>
+                
         <groupId>tk.mybatis</groupId>
+                
         <artifactId>mapper-spring-boot</artifactId>
+                
         <version>2.1.5</version>
+            
     </parent>
+        
     <artifactId>mapper-spring-boot-samples</artifactId>
+        
     <packaging>pom</packaging>
+        
     <name>mapper-spring-boot-samples</name>
+        
     <modules>
+                
         <module>mapper-spring-boot-sample-annotation</module>
+                
         <module>mapper-spring-boot-sample-xml</module>
+            
     </modules>
+        
     <dependencyManagement>
+                
         <dependencies>
+                        
             <dependency>
+                                
                 <groupId>ognl</groupId>
+                                
                 <artifactId>ognl</artifactId>
+                                
                 <version>3.1.2</version>
+                                
                 <exclusions>
+                                        
                     <exclusion>
+                                                
                         <groupId>javassist</groupId>
+                                                
                         <artifactId>javassist</artifactId>
+                                            
                     </exclusion>
+                                    
                 </exclusions>
+                            
             </dependency>
+                        
             <dependency>
+                                
                 <groupId>org.javassist</groupId>
+                                
                 <artifactId>javassist</artifactId>
+                                
                 <version>3.20.0-GA</version>
+                            
             </dependency>
+                    
         </dependencies>
+            
     </dependencyManagement>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>edu.illinois.cs</groupId>
+                <artifactId>testrunner-maven-plugin</artifactId>
+                <version>1.2</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>edu.illinois.cs</groupId>
+                        <artifactId>idflakies</artifactId>
+                        <version>1.1.0</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <className>edu.illinois.cs.dt.tools.detection.DetectorPlugin</className>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
+

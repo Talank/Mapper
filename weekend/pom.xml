@@ -21,58 +21,118 @@
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   ~ THE SOFTWARE.
   ~
-  -->
-
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+        
     <modelVersion>4.0.0</modelVersion>
+        
     <parent>
+                
         <groupId>tk.mybatis</groupId>
+                
         <artifactId>mapper-parent</artifactId>
+                
         <version>3</version>
+            
     </parent>
+        
     <artifactId>mapper-weekend</artifactId>
+        
     <version>1.1.5</version>
-
+        
     <name>weekend</name>
+        
     <description>Mybatis通用Mapper扩展 - weekend</description>
-
+        
     <developers>
+                
         <developer>
+                        
             <name>liuyuyu</name>
+                        
             <email>liuyuyu2333@gmail.com</email>
+                    
         </developer>
+                
         <developer>
+                        
             <name>abel533</name>
+                        
             <email>abel533@gmail.com</email>
+                    
         </developer>
+                
         <developer>
+                        
             <name>chinaerserver</name>
+                        
             <email>chinaerserver@gmail.com</email>
+                    
         </developer>
+            
     </developers>
-
+        
     <properties>
+                
         <jdk.version>1.8</jdk.version>
+                
         <mapper-module.version>1.1.5</mapper-module.version>
+            
     </properties>
-
+        
     <dependencies>
+                
         <dependency>
+                        
             <groupId>org.mybatis</groupId>
+                        
             <artifactId>mybatis</artifactId>
+                    
         </dependency>
+                
         <dependency>
+                        
             <groupId>tk.mybatis</groupId>
+                        
             <artifactId>mapper-core</artifactId>
+                        
             <version>${mapper-module.version}</version>
+                        
             <scope>provided</scope>
+                    
         </dependency>
+                
         <dependency>
+                        
             <groupId>tk.mybatis</groupId>
+                        
             <artifactId>mapper-base</artifactId>
+                        
             <version>${mapper-module.version}</version>
+                        
             <scope>test</scope>
+                    
         </dependency>
+            
     </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>edu.illinois.cs</groupId>
+                <artifactId>testrunner-maven-plugin</artifactId>
+                <version>1.2</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>edu.illinois.cs</groupId>
+                        <artifactId>idflakies</artifactId>
+                        <version>1.1.0</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <className>edu.illinois.cs.dt.tools.detection.DetectorPlugin</className>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
+
