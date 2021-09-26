@@ -29,7 +29,7 @@ jobs:
           pwd
           mvn -version
           cd base
-          mvn testrunner:testplugin
+          mvn testrunner:testplugin -Dtest=tk.mybatis.mapper.test.example.TestExampleBuilder.testEqualTo -DfailIfNoTests=false
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
