@@ -9,7 +9,7 @@ on:
 jobs: 
   test:
     runs-on: ubuntu-20.04
-    timeout-minutes: 4
+    timeout-minutes: 1
 
     steps:
       - name: Checkout the repository
@@ -35,7 +35,7 @@ jobs:
         run: |
           git config --global user.name 'Talank Baral'
           git config --global user.email 'talank@gces.edu.np'
-          git remote show origin
           git add .
           git commit -m "[Robot]Automated report"
-          git push origin ${{ github.head_ref }}
+          git pull --rebase https://github.com/Talank/Mapper.git ${{ github.head_ref }}
+          git push https://github.com/Talank/Mapper.git HEAD:${{ github.head_ref }}
