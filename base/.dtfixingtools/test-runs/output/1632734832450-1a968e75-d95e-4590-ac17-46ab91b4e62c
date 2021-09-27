@@ -1,0 +1,2229 @@
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@69fb6037]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@69fb6037]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@69fb6037]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@932bc4a]
+DEBUG [main] - ==>  Preparing: SELECT id,name,address,state FROM user 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - ==>  Preparing: SELECT id,name,address,state FROM user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@932bc4a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@932bc4a]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5fbdfdcf]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5fbdfdcf]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5fbdfdcf]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2ed2d9cb]
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,address,state ) VALUES( ?,?,?,? ) 
+DEBUG [main] - ==> Parameters: 3(Integer), liuzh(String), Hebei/Qinhuangdao(String), 1(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,name,address,state FROM user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 3(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2ed2d9cb]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2ed2d9cb]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2ed2d9cb]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1de76cc7]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1de76cc7]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1de76cc7]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@593aaf41]
+DEBUG [main] - ==>  Preparing: SELECT id,name,address,state FROM user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: UPDATE user SET name = ?,address = ?,state = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: abel533(String), Hebei/Handan(String), 0(Integer), 1(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,name,address,state FROM user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@593aaf41]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@593aaf41]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@593aaf41]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3c7f66c4]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3c7f66c4]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3c7f66c4]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17497425]
+DEBUG [main] - ==>  Preparing: DELETE FROM user WHERE id = ? 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: DELETE FROM user WHERE address = ? AND state = ? 
+DEBUG [main] - ==> Parameters: Hebei/Handan(String), 1(Integer)
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - ==>  Preparing: DELETE FROM user WHERE address = ? AND state = ? 
+DEBUG [main] - ==> Parameters: Hebei/Handan(String), 0(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17497425]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17497425]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17497425]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60bd273d]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60bd273d]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60bd273d]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@229c6181]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@229c6181]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@229c6181]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2794eab6]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2794eab6]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2794eab6]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e6a3214]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e6a3214]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e6a3214]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@71ba6d4e]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@71ba6d4e]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@71ba6d4e]
+DEBUG [main] - Class not found: org.jboss.vfs.VFS
+DEBUG [main] - JBoss 6 VFS API is not available in this environment.
+DEBUG [main] - Class not found: org.jboss.vfs.VirtualFile
+DEBUG [main] - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG [main] - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model
+DEBUG [main] - Reader entry: BaseLogicDelete.class
+DEBUG [main] - Reader entry: BaseLogicDelete.java
+DEBUG [main] - Reader entry: Country.class
+DEBUG [main] - Reader entry: Country.java
+DEBUG [main] - Reader entry: Country2.class
+DEBUG [main] - Reader entry: Country2.java
+DEBUG [main] - Reader entry: CountryExample.class
+DEBUG [main] - Reader entry: CountryExample.java
+DEBUG [main] - Reader entry: CountryExample$Criteria.class
+DEBUG [main] - Reader entry: CountryExample$Criterion.class
+DEBUG [main] - Reader entry: CountryExample$GeneratedCriteria.class
+DEBUG [main] - Reader entry: CountryI.class
+DEBUG [main] - Reader entry: CountryI.java
+DEBUG [main] - Reader entry: CountryJDBC.class
+DEBUG [main] - Reader entry: CountryJDBC.java
+DEBUG [main] - Reader entry: CountryT.class
+DEBUG [main] - Reader entry: CountryT.java
+DEBUG [main] - Reader entry: CountryVersion.class
+DEBUG [main] - Reader entry: CountryVersion.java
+DEBUG [main] - Reader entry: Entity.class
+DEBUG [main] - Reader entry: Entity.java
+DEBUG [main] - Reader entry: TbUser.class
+DEBUG [main] - Reader entry: TbUser.java
+DEBUG [main] - Reader entry: TbUserLogicDelete.class
+DEBUG [main] - Reader entry: TbUserLogicDelete.java
+DEBUG [main] - Reader entry: UserInfo.class
+DEBUG [main] - Reader entry: UserInfo.java
+DEBUG [main] - Reader entry: UserInfoAble.class
+DEBUG [main] - Reader entry: UserInfoAble.java
+DEBUG [main] - Reader entry: UserInfoMap.class
+DEBUG [main] - Reader entry: UserInfoMap.java
+DEBUG [main] - Reader entry: UserLogin.class
+DEBUG [main] - Reader entry: UserLogin.java
+DEBUG [main] - Reader entry: UserLogin2.class
+DEBUG [main] - Reader entry: UserLogin2.java
+DEBUG [main] - Reader entry: UserLogin2Key.class
+DEBUG [main] - Reader entry: UserLogin2Key.java
+DEBUG [main] - Reader entry: UserParent.class
+DEBUG [main] - Reader entry: UserParent.java
+DEBUG [main] - Listing file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/BaseLogicDelete.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/BaseLogicDelete.class
+DEBUG [main] - Reader entry: ����   2 +
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/BaseLogicDelete.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/BaseLogicDelete.java
+DEBUG [main] - Reader entry: package tk.mybatis.mapper.model;
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country.class
+DEBUG [main] - Reader entry: ����   2 B
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country2.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country2.class
+DEBUG [main] - Reader entry: ����   2 A
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country2.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Country2.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample.class
+DEBUG [main] - Reader entry: ����   2 O
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$Criteria.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$Criteria.class
+DEBUG [main] - Reader entry: ����   2 �
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$Criterion.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$Criterion.class
+DEBUG [main] - Reader entry: ����   2 J
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$GeneratedCriteria.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryExample$GeneratedCriteria.class
+DEBUG [main] - Reader entry: ����   2 �
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryI.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryI.class
+DEBUG [main] - Reader entry: ����   2 E
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryI.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryI.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryJDBC.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryJDBC.class
+DEBUG [main] - Reader entry: ����   2 C
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryJDBC.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryJDBC.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryT.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryT.class
+DEBUG [main] - Reader entry: ����   2 >
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryT.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryT.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryVersion.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryVersion.class
+DEBUG [main] - Reader entry: ����   2 
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryVersion.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/CountryVersion.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Entity.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Entity.class
+DEBUG [main] - Reader entry: ����   2 4
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Entity.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/Entity.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUser.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUser.class
+DEBUG [main] - Reader entry: ����   2 M
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUser.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUser.java
+DEBUG [main] - Reader entry: package tk.mybatis.mapper.model;
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUserLogicDelete.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUserLogicDelete.class
+DEBUG [main] - Reader entry: ����   2 A
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUserLogicDelete.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/TbUserLogicDelete.java
+DEBUG [main] - Reader entry: package tk.mybatis.mapper.model;
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfo.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfo.class
+DEBUG [main] - Reader entry: ����   2 r
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfo.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfo.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoAble.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoAble.class
+DEBUG [main] - Reader entry: ����   2 q
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoAble.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoAble.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoMap.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoMap.class
+DEBUG [main] - Reader entry: ����   2 p
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoMap.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserInfoMap.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin.class
+DEBUG [main] - Reader entry: ����   2 K
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2.class
+DEBUG [main] - Reader entry: ����   2 $
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2Key.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2Key.class
+DEBUG [main] - Reader entry: ����   2 :
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2Key.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserLogin2Key.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserParent.class
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserParent.class
+DEBUG [main] - Reader entry: ����   2 
+DEBUG [main] - Find JAR URL: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserParent.java
+DEBUG [main] - Not a JAR: file:/home/runner/work/Mapper/Mapper/base/target/test-classes/tk/mybatis/mapper/model/UserParent.java
+DEBUG [main] - Reader entry: /*
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.BaseLogicDelete matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.Country matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.Country2 matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryExample matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryExample$Criteria matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryExample$Criterion matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryExample$GeneratedCriteria matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryI matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryJDBC matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryT matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.CountryVersion matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.Entity matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.TbUser matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.TbUserLogicDelete matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserInfo matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserInfoAble matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserInfoMap matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserLogin matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserLogin2 matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserLogin2Key matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class tk.mybatis.mapper.model.UserParent matches criteria [is assignable to Object]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6be968ce]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6be968ce]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6be968ce]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@305ffe9e]
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 100(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@305ffe9e]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@305ffe9e]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@305ffe9e]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1972e513]
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 100(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: null
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1972e513]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1972e513]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1972e513]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@61c4eee0]
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 100(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@61c4eee0]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@61c4eee0]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@61c4eee0]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1040be71]
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: null
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: -100(Integer)
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 0(Integer)
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 1000(Integer)
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1040be71]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1040be71]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1040be71]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4c163e3]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM country 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 100(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 100(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM country 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 100(Integer), Malaysia(String), MY(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4c163e3]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4c163e3]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4c163e3]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4bdeaabb]
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4bdeaabb]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4bdeaabb]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4bdeaabb]
+countrycode  -  @Id:false  -  javaType:class java.lang.String
+countryname  -  @Id:false  -  javaType:class java.lang.String
+dynamicTableName  -  @Id:false  -  javaType:class java.lang.String
+dynamicTableName123  -  @Id:false  -  javaType:class java.lang.String
+id  -  @Id:true  -  javaType:class java.lang.Integer
+list  -  @Id:false  -  javaType:interface java.util.List
+name  -  @Id:false  -  javaType:class java.lang.String
+======================================
+hello - hello
+hello_world - hello_world
+helloWorld - hello_world
+hello1 - hello1
+hello_1 - hello_1
+hello - hello
+hello_world - hello_world
+helloWorld - hello_world
+hello1 - hello1
+hello_1 - hello_1
+hello - HELLO
+hello_world - HELLO_WORLD
+helloWorld - HELLO_WORLD
+hello1 - HELLO1
+hello_1 - HELLO_1
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4f32a3ad]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4f32a3ad]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4f32a3ad]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7d900ecf]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7d900ecf]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7d900ecf]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5965d37]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5965d37]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5965d37]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3de8f619]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3de8f619]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3de8f619]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7bd7d6d6]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7bd7d6d6]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7bd7d6d6]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b7a7f33]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE ( ( id > ? and id < ? ) or ( id < ? ) ) ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 100(Integer), 151(Integer), 41(Integer)
+DEBUG [main] - <==      Total: 90
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b7a7f33]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5b7a7f33]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2dfaea86]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE ( ( id > ? and id < ? ) ) ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 100(Integer), 102(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2dfaea86]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2dfaea86]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@79207381]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@79207381]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@79207381]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5a5a729f]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5a5a729f]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5a5a729f]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3932c79a]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3932c79a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3932c79a]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@821330f]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@821330f]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@821330f]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7857fe2]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7857fe2]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7857fe2]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@446a1e84]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@446a1e84]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@446a1e84]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@387a8303]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@387a8303]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@387a8303]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@57db2b13]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@57db2b13]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@57db2b13]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5276d6ee]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ? WHERE ( ( countryname like ? ) or ( id > ? ) ) 
+DEBUG [main] - ==> Parameters: 天朝(String), A%(String), 100(Integer)
+DEBUG [main] - <==    Updates: 95
+DEBUG [main] - ==>  Preparing: SELECT COUNT(*) FROM country WHERE ( ( countryname = ? ) ) 
+DEBUG [main] - ==> Parameters: 天朝(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5276d6ee]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5276d6ee]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5276d6ee]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6933b6c6]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ? WHERE ( ( id > ? ) ) 
+DEBUG [main] - ==> Parameters: 天朝(String), 100(Integer)
+DEBUG [main] - <==    Updates: 83
+DEBUG [main] - ==>  Preparing: SELECT COUNT(*) FROM country WHERE ( ( countryname = ? ) ) 
+DEBUG [main] - ==> Parameters: 天朝(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6933b6c6]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6933b6c6]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6933b6c6]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@46d59067]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ? WHERE ( ( countryname like ? ) or ( Id > ? ) ) 
+DEBUG [main] - ==> Parameters: 天朝(String), A%(String), 100(Integer)
+DEBUG [main] - <==    Updates: 95
+DEBUG [main] - ==>  Preparing: SELECT COUNT(*) FROM country WHERE ( ( countryname = ? ) ) 
+DEBUG [main] - ==> Parameters: 天朝(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@46d59067]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@46d59067]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@46d59067]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5dafbe45]
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: null, null, null
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5dafbe45]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5dafbe45]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5dafbe45]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f953efd]
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 10086(Integer), 天朝(String), null
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE id = ? ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 10086(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: DELETE FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 10086(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f953efd]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f953efd]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f953efd]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@12591ac8]
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: null, null, null
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@12591ac8]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@12591ac8]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@12591ac8]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1c9b0314]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1c9b0314]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1c9b0314]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@700fb871]
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563296018433(Long), Angola(String), AO(String)
+DEBUG [main] - <==    Updates: 1
+1712046563296018433
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563299164161(Long), Afghanistan(String), AF(String)
+DEBUG [main] - <==    Updates: 1
+1712046563299164161
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563301261313(Long), Albania(String), AL(String)
+DEBUG [main] - <==    Updates: 1
+1712046563301261313
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563310698497(Long), Algeria(String), DZ(String)
+DEBUG [main] - <==    Updates: 1
+1712046563310698497
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563311747073(Long), Andorra(String), AD(String)
+DEBUG [main] - <==    Updates: 1
+1712046563311747073
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563311747074(Long), Anguilla(String), AI(String)
+DEBUG [main] - <==    Updates: 1
+1712046563311747074
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563312795649(Long), Antigua and Barbuda(String), AG(String)
+DEBUG [main] - <==    Updates: 1
+1712046563312795649
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563313844225(Long), Argentina(String), AR(String)
+DEBUG [main] - <==    Updates: 1
+1712046563313844225
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563313844226(Long), Armenia(String), AM(String)
+DEBUG [main] - <==    Updates: 1
+1712046563313844226
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563314892801(Long), Australia(String), AU(String)
+DEBUG [main] - <==    Updates: 1
+1712046563314892801
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563314892802(Long), Austria(String), AT(String)
+DEBUG [main] - <==    Updates: 1
+1712046563314892802
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563315941377(Long), Azerbaijan(String), AZ(String)
+DEBUG [main] - <==    Updates: 1
+1712046563315941377
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563315941378(Long), Bahamas(String), BS(String)
+DEBUG [main] - <==    Updates: 1
+1712046563315941378
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563316989953(Long), Bahrain(String), BH(String)
+DEBUG [main] - <==    Updates: 1
+1712046563316989953
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563318038529(Long), Bangladesh(String), BD(String)
+DEBUG [main] - <==    Updates: 1
+1712046563318038529
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563318038530(Long), Barbados(String), BB(String)
+DEBUG [main] - <==    Updates: 1
+1712046563318038530
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563319087105(Long), Belarus(String), BY(String)
+DEBUG [main] - <==    Updates: 1
+1712046563319087105
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563320135681(Long), Belgium(String), BE(String)
+DEBUG [main] - <==    Updates: 1
+1712046563320135681
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563321184257(Long), Belize(String), BZ(String)
+DEBUG [main] - <==    Updates: 1
+1712046563321184257
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563322232833(Long), Benin(String), BJ(String)
+DEBUG [main] - <==    Updates: 1
+1712046563322232833
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563322232834(Long), Bermuda Is.(String), BM(String)
+DEBUG [main] - <==    Updates: 1
+1712046563322232834
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563323281409(Long), Bolivia(String), BO(String)
+DEBUG [main] - <==    Updates: 1
+1712046563323281409
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563323281410(Long), Botswana(String), BW(String)
+DEBUG [main] - <==    Updates: 1
+1712046563323281410
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563324329985(Long), Brazil(String), BR(String)
+DEBUG [main] - <==    Updates: 1
+1712046563324329985
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563324329986(Long), Brunei(String), BN(String)
+DEBUG [main] - <==    Updates: 1
+1712046563324329986
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563325378561(Long), Bulgaria(String), BG(String)
+DEBUG [main] - <==    Updates: 1
+1712046563325378561
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563325378562(Long), Burkina-faso(String), BF(String)
+DEBUG [main] - <==    Updates: 1
+1712046563325378562
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563326427137(Long), Burma(String), MM(String)
+DEBUG [main] - <==    Updates: 1
+1712046563326427137
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563327475713(Long), Burundi(String), BI(String)
+DEBUG [main] - <==    Updates: 1
+1712046563327475713
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563327475714(Long), Cameroon(String), CM(String)
+DEBUG [main] - <==    Updates: 1
+1712046563327475714
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563328524289(Long), Canada(String), CA(String)
+DEBUG [main] - <==    Updates: 1
+1712046563328524289
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563328524290(Long), Central African Republic(String), CF(String)
+DEBUG [main] - <==    Updates: 1
+1712046563328524290
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563329572865(Long), Chad(String), TD(String)
+DEBUG [main] - <==    Updates: 1
+1712046563329572865
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563329572866(Long), Chile(String), CL(String)
+DEBUG [main] - <==    Updates: 1
+1712046563329572866
+DEBUG [main] - ==>  Preparing: INSERT INTO country ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1712046563330621441(Long), China(String), CN(String)
+DEBUG [main] - <==    Updates: 1
+1712046563330621441
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@700fb871]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@700fb871]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@700fb871]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2fb0623e]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2fb0623e]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2fb0623e]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@311bf055]
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: be14e13f-b973-4247-bd00-befc51e07023(String), Angola(String), AO(String)
+DEBUG [main] - <==    Updates: 1
+be14e13f-b973-4247-bd00-befc51e07023
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: f0513140-5f0a-4f2e-9dfc-ffa4b4feab6d(String), Afghanistan(String), AF(String)
+DEBUG [main] - <==    Updates: 1
+f0513140-5f0a-4f2e-9dfc-ffa4b4feab6d
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 7977e51a-70eb-4cd6-a1ea-49bd5e67cbcb(String), Albania(String), AL(String)
+DEBUG [main] - <==    Updates: 1
+7977e51a-70eb-4cd6-a1ea-49bd5e67cbcb
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 2de7123d-afdc-4ac1-a483-3721ed2da3aa(String), Algeria(String), DZ(String)
+DEBUG [main] - <==    Updates: 1
+2de7123d-afdc-4ac1-a483-3721ed2da3aa
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: d747155b-3340-4670-8aaf-bb912c568f4b(String), Andorra(String), AD(String)
+DEBUG [main] - <==    Updates: 1
+d747155b-3340-4670-8aaf-bb912c568f4b
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 676b2568-5809-4354-97b2-84b7f9755465(String), Anguilla(String), AI(String)
+DEBUG [main] - <==    Updates: 1
+676b2568-5809-4354-97b2-84b7f9755465
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: e64ca1ca-a3d5-4d01-8833-5efda443ba5a(String), Antigua and Barbuda(String), AG(String)
+DEBUG [main] - <==    Updates: 1
+e64ca1ca-a3d5-4d01-8833-5efda443ba5a
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 71d6c3aa-6b0e-48f1-a3ce-ab263d9e4781(String), Argentina(String), AR(String)
+DEBUG [main] - <==    Updates: 1
+71d6c3aa-6b0e-48f1-a3ce-ab263d9e4781
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: faf5bd19-4c85-4cb4-bbbf-f00fb4546c79(String), Armenia(String), AM(String)
+DEBUG [main] - <==    Updates: 1
+faf5bd19-4c85-4cb4-bbbf-f00fb4546c79
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: e6cf5802-e643-4d20-8e4b-4cf3c6f82bb0(String), Australia(String), AU(String)
+DEBUG [main] - <==    Updates: 1
+e6cf5802-e643-4d20-8e4b-4cf3c6f82bb0
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 68108306-be4f-4420-b592-d310dbc316f5(String), Austria(String), AT(String)
+DEBUG [main] - <==    Updates: 1
+68108306-be4f-4420-b592-d310dbc316f5
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 8e081d45-95f7-431b-a7a7-0c1176854078(String), Azerbaijan(String), AZ(String)
+DEBUG [main] - <==    Updates: 1
+8e081d45-95f7-431b-a7a7-0c1176854078
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 4b87fb0a-18a1-448e-9ea4-3427ee5ab768(String), Bahamas(String), BS(String)
+DEBUG [main] - <==    Updates: 1
+4b87fb0a-18a1-448e-9ea4-3427ee5ab768
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: c28d6025-5905-4add-8e5f-8c1a25c10ecf(String), Bahrain(String), BH(String)
+DEBUG [main] - <==    Updates: 1
+c28d6025-5905-4add-8e5f-8c1a25c10ecf
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 81f0be59-c9dd-4b9c-81b6-c8efd9490cfd(String), Bangladesh(String), BD(String)
+DEBUG [main] - <==    Updates: 1
+81f0be59-c9dd-4b9c-81b6-c8efd9490cfd
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: abc1120f-153d-4733-a31f-72617ef43630(String), Barbados(String), BB(String)
+DEBUG [main] - <==    Updates: 1
+abc1120f-153d-4733-a31f-72617ef43630
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: c03d1398-a5dd-4b41-8478-aa063186a518(String), Belarus(String), BY(String)
+DEBUG [main] - <==    Updates: 1
+c03d1398-a5dd-4b41-8478-aa063186a518
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: e1d65b54-850d-46ef-b7e6-6e9792f0fb99(String), Belgium(String), BE(String)
+DEBUG [main] - <==    Updates: 1
+e1d65b54-850d-46ef-b7e6-6e9792f0fb99
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1ae204f8-7455-4db9-a66c-697132a77519(String), Belize(String), BZ(String)
+DEBUG [main] - <==    Updates: 1
+1ae204f8-7455-4db9-a66c-697132a77519
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 1775cb61-6073-46d5-98b6-5d5ca173c3ff(String), Benin(String), BJ(String)
+DEBUG [main] - <==    Updates: 1
+1775cb61-6073-46d5-98b6-5d5ca173c3ff
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 792940d5-d2c0-4f7d-bd30-15f97bf9e8ea(String), Bermuda Is.(String), BM(String)
+DEBUG [main] - <==    Updates: 1
+792940d5-d2c0-4f7d-bd30-15f97bf9e8ea
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: c449e6a2-9bc5-4d6e-98bb-dff448d5b040(String), Bolivia(String), BO(String)
+DEBUG [main] - <==    Updates: 1
+c449e6a2-9bc5-4d6e-98bb-dff448d5b040
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: baf11077-48f1-43d9-b08f-01b456363bb4(String), Botswana(String), BW(String)
+DEBUG [main] - <==    Updates: 1
+baf11077-48f1-43d9-b08f-01b456363bb4
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 2a7fb00a-f5ef-4919-9771-2c7bc18b3bb2(String), Brazil(String), BR(String)
+DEBUG [main] - <==    Updates: 1
+2a7fb00a-f5ef-4919-9771-2c7bc18b3bb2
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 770cdca7-e403-4034-835c-49246f4e7fcb(String), Brunei(String), BN(String)
+DEBUG [main] - <==    Updates: 1
+770cdca7-e403-4034-835c-49246f4e7fcb
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 747f2c5b-edc0-461c-b426-e6f52ed603e2(String), Bulgaria(String), BG(String)
+DEBUG [main] - <==    Updates: 1
+747f2c5b-edc0-461c-b426-e6f52ed603e2
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: eda08ca7-80a9-4ff9-bcb9-dbefeda9cacf(String), Burkina-faso(String), BF(String)
+DEBUG [main] - <==    Updates: 1
+eda08ca7-80a9-4ff9-bcb9-dbefeda9cacf
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: ae70b23c-ae66-454b-9223-8d0a74aeb518(String), Burma(String), MM(String)
+DEBUG [main] - <==    Updates: 1
+ae70b23c-ae66-454b-9223-8d0a74aeb518
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 872a336d-ac38-4bf0-b1b2-fcebef9a8a36(String), Burundi(String), BI(String)
+DEBUG [main] - <==    Updates: 1
+872a336d-ac38-4bf0-b1b2-fcebef9a8a36
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: b083292c-30f6-4531-9909-2ac44e81d812(String), Cameroon(String), CM(String)
+DEBUG [main] - <==    Updates: 1
+b083292c-30f6-4531-9909-2ac44e81d812
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 307f93a5-7c9a-4ffd-86b8-d6d9d910037d(String), Canada(String), CA(String)
+DEBUG [main] - <==    Updates: 1
+307f93a5-7c9a-4ffd-86b8-d6d9d910037d
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 662128e4-e609-4285-aacf-397fb0c66cb1(String), Central African Republic(String), CF(String)
+DEBUG [main] - <==    Updates: 1
+662128e4-e609-4285-aacf-397fb0c66cb1
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 964b3907-2b40-454e-8d09-f13ac2dc8fcc(String), Chad(String), TD(String)
+DEBUG [main] - <==    Updates: 1
+964b3907-2b40-454e-8d09-f13ac2dc8fcc
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 468ed3f3-bfab-4731-a246-3adeedaeed77(String), Chile(String), CL(String)
+DEBUG [main] - <==    Updates: 1
+468ed3f3-bfab-4731-a246-3adeedaeed77
+DEBUG [main] - ==>  Preparing: INSERT INTO user ( id,name,code ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: a6f73987-e87e-4afd-9829-b400fd45f2e3(String), China(String), CN(String)
+DEBUG [main] - <==    Updates: 1
+a6f73987-e87e-4afd-9829-b400fd45f2e3
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@311bf055]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@311bf055]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@311bf055]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@78452606]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE ( ( id = ? ) ) 
+DEBUG [main] - ==> Parameters: 天朝(String), null, 35(Integer)
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@78452606]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@78452606]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@78452606]
+java.lang.AssertionError: expected:<1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.example.TestUpdateByExample.testUpdateByExample(TestUpdateByExample.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3bcd05cb]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE ( ( Id = ? ) ) 
+DEBUG [main] - ==> Parameters: 天朝(String), null, 35(Integer)
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3bcd05cb]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3bcd05cb]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3bcd05cb]
+java.lang.AssertionError: expected:<1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.example.TestUpdateByExample.testUpdateByExample2(TestUpdateByExample.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@24959ca4]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE countrycode = ? 
+DEBUG [main] - ==> Parameters: CN(String)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@24959ca4]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@24959ca4]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5c86dbc5]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE countrycode = ? 
+DEBUG [main] - ==> Parameters: CN(String)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5c86dbc5]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5c86dbc5]
+DEBUG [main] - Cache Hit Ratio [tk.mybatis.mapper.mapper.CachedCountryMapper]: 0.0
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@64b0598]
+DEBUG [main] - ==>  Preparing: select * from country where id = ? 
+DEBUG [main] - ==> Parameters: 35(Integer)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@64b0598]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@64b0598]
+DEBUG [main] - Cache Hit Ratio [tk.mybatis.mapper.mapper.CachedCountryMapper]: 0.5
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@383dc82c]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE ( ( id > ? and id < ? ) or ( id < ? ) ) ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 100(Integer), 151(Integer), 41(Integer)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@383dc82c]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@383dc82c]
+java.lang.AssertionError: expected:<20> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.rowbounds.TestSelectRowBounds.testSelectByExample(TestSelectRowBounds.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@478db956]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@478db956]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@478db956]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1b410b60]
+DEBUG [main] - ==>  Preparing: INSERT INTO test_timestamp ( id,test_date,test_time,test_datetime ) VALUES( ?,?,?,? ) 
+DEBUG [main] - ==> Parameters: 3(Integer), 2021-09-27(Date), 09:27:16(Time), 2021-09-27 09:27:16.08(Timestamp)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,test_date,test_time,test_datetime FROM test_timestamp WHERE id = ? 
+DEBUG [main] - ==> Parameters: 3(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1b410b60]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1b410b60]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1b410b60]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@77659b30]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@77659b30]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@77659b30]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e13529a]
+DEBUG [main] - ==>  Preparing: SELECT id,test_date,test_time,test_datetime FROM test_timestamp 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e13529a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e13529a]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6f8e8894]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6f8e8894]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6f8e8894]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@e25951c]
+DEBUG [main] - ==>  Preparing: SELECT id,test_date,test_time,test_datetime FROM test_timestamp 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@e25951c]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@e25951c]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f666ebb]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f666ebb]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f666ebb]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4b2c5e02]
+DEBUG [main] - ==>  Preparing: SELECT id,test_date,test_time,test_datetime FROM test_timestamp 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 2
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4b2c5e02]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4b2c5e02]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2dc9b0f5]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2dc9b0f5]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2dc9b0f5]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b5fad2d]
+DEBUG [main] - ==>  Preparing: INSERT INTO test_timestamp ( id,test_date,test_time,test_datetime ) VALUES( ?,?,?,? ) 
+DEBUG [main] - ==> Parameters: 3(Integer), 2021-09-27 09:27:16.326(Timestamp), 2021-09-27 09:27:16.326(Timestamp), 2021-09-27 09:27:16.326(Timestamp)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,test_date,test_time,test_datetime FROM test_timestamp WHERE id = ? 
+DEBUG [main] - ==> Parameters: 3(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b5fad2d]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b5fad2d]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3b5fad2d]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@34b9f960]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@34b9f960]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@34b9f960]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@19b89d4]
+DEBUG [main] - ==>  Preparing: INSERT INTO test_timestamp ( id,test_date,test_time,test_datetime ) VALUES( ?,?,?,? ) 
+DEBUG [main] - ==> Parameters: 3(Integer), 2021-09-27 09:27:16.393(Timestamp), 2021-09-27 09:27:16.393(Timestamp), 2021-09-27 09:27:16.393(Timestamp)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Preparing: SELECT id,test_date,test_time,test_datetime FROM test_timestamp WHERE id = ? 
+DEBUG [main] - ==> Parameters: 3(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@19b89d4]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@19b89d4]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@19b89d4]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@791d1f8b]
+DEBUG [main] - ==>  Preparing: INSERT INTO country2 ( id,countrycode ) VALUES( ?,? ) 
+DEBUG [main] - ==> Parameters: null, CN(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Executing: CALL IDENTITY() 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country2 WHERE id = ? AND countrycode = ? 
+DEBUG [main] - ==> Parameters: 1(Integer), CN(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: DELETE FROM country2 WHERE id = ? 
+DEBUG [main] - ==> Parameters: 1(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@791d1f8b]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@791d1f8b]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@791d1f8b]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1890516e]
+DEBUG [main] - ==>  Preparing: INSERT INTO country2 ( id,countryname,countrycode ) VALUES( ?,?,? ) 
+DEBUG [main] - ==> Parameters: 10086(Integer), 天朝(String), CN(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Executing: CALL IDENTITY() 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country2 WHERE countrycode = ? 
+DEBUG [main] - ==> Parameters: CN(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: DELETE FROM country2 WHERE id = ? 
+DEBUG [main] - ==> Parameters: 10086(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1890516e]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1890516e]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1890516e]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@31edaa7d]
+DEBUG [main] - ==>  Preparing: INSERT INTO country2 ( id,countryname ) VALUES( ?,? ) 
+DEBUG [main] - ==> Parameters: 10086(Integer), 天朝(String)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - ==>  Executing: CALL IDENTITY() 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country2 WHERE id = ? 
+DEBUG [main] - ==> Parameters: 10086(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - ==>  Preparing: DELETE FROM country2 WHERE id = ? 
+DEBUG [main] - ==> Parameters: 10086(Integer)
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@31edaa7d]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@31edaa7d]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@31edaa7d]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7c3fdb62]
+DEBUG [main] - ==>  Preparing: INSERT INTO country2 ( id ) VALUES( ? ) 
+DEBUG [main] - ==> Parameters: null
+DEBUG [main] - <==    Updates: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7c3fdb62]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7c3fdb62]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7c3fdb62]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@205d38da]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: 美国(String), null, 174(Integer)
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@205d38da]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@205d38da]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@205d38da]
+java.lang.AssertionError: expected:<1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.country.TestUpdateByPrimaryKey.testDynamicUpdateByPrimaryKey(TestUpdateByPrimaryKey.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6f3187b0]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: null, null, null
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6f3187b0]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6f3187b0]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6f3187b0]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@189cbd7c]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: null, null, null
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@189cbd7c]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@189cbd7c]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@189cbd7c]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@39b43d60]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: null, null, null
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: null, CN(String), 174(Integer)
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@39b43d60]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@39b43d60]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@39b43d60]
+java.lang.AssertionError: expected:<1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.country.TestUpdateByPrimaryKey.testDynamicUpdateByPrimaryKeyNotFoundKeyProperties(TestUpdateByPrimaryKey.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5e21e98f]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode,version FROM country WHERE id = ? 
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5e21e98f]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5e21e98f]
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: VERSION
+### The error may exist in tk/mybatis/mapper/mapper/CountryVersionMapper.java (best guess)
+### The error may involve tk.mybatis.mapper.mapper.CountryVersionMapper.selectByPrimaryKey
+### The error occurred while executing a query
+### SQL: SELECT id,countryname,countrycode,version  FROM  country   WHERE  id = ?
+### Cause: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: VERSION
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy40.selectByPrimaryKey(Unknown Source)
+	at tk.mybatis.mapper.test.country.TestUpdateByPrimaryKey.testUpdateByPrimaryKeyAndVersion(TestUpdateByPrimaryKey.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: VERSION
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.prepareStatement(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy16.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:85)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 42 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: VERSION
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.ExpressionColumn.checkColumnsResolved(Unknown Source)
+	at org.hsqldb.QueryExpression.resolve(Unknown Source)
+	at org.hsqldb.ParserDQL.compileCursorSpecification(Unknown Source)
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatement(Unknown Source)
+	at org.hsqldb.Session.compileStatement(Unknown Source)
+	at org.hsqldb.StatementManager.compile(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 59 more
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@239105a8]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(*) FROM country WHERE ( ( id > ? ) ) FOR UPDATE 
+DEBUG [main] - ==> Parameters: 100(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@239105a8]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@239105a8]
+java.lang.AssertionError: expected:<83> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.example.TestSelectCountByExample.testSelectCountByExampleForUpdate(TestSelectCountByExample.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@23202fce]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(*) FROM country WHERE ( ( countryname like ? ) or ( id > ? ) ) 
+DEBUG [main] - ==> Parameters: A%(String), 100(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@23202fce]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@23202fce]
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at tk.mybatis.mapper.test.example.TestSelectCountByExample.testSelectCountByExample2(TestSelectCountByExample.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6f1c29b7]
+DEBUG [main] - ==>  Preparing: SELECT COUNT( id) FROM country WHERE ( ( id > ? ) ) 
+DEBUG [main] - ==> Parameters: 100(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6f1c29b7]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6f1c29b7]
+java.lang.AssertionError: expected:<83> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.example.TestSelectCountByExample.testSelectCountByExample(TestSelectCountByExample.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@407a7f2a]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(*) FROM country WHERE ( ( countryname like ? ) or ( Id > ? ) ) 
+DEBUG [main] - ==> Parameters: A%(String), 100(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@407a7f2a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@407a7f2a]
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at tk.mybatis.mapper.test.example.TestSelectCountByExample.testSelectCountByExample3(TestSelectCountByExample.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3fa247d1]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM country WHERE countryname = ? AND countrycode = ? 
+DEBUG [main] - ==> Parameters: 天朝(String), CN(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3fa247d1]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3fa247d1]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4f4c4b1a]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM country WHERE countrycode = ? 
+DEBUG [main] - ==> Parameters: CN(String)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4f4c4b1a]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4f4c4b1a]
+java.lang.AssertionError: expected:<1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.country.TestSelectCount.testDynamicSelect(TestSelectCount.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@495ee280]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM country 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@495ee280]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@495ee280]
+java.lang.AssertionError: expected:<183> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.country.TestSelectCount.testDynamicSelectCount(TestSelectCount.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3116c353]
+DEBUG [main] - ==>  Preparing: SELECT COUNT(id) FROM country 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3116c353]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3116c353]
+java.lang.AssertionError: expected:<183> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.country.TestSelectCount.testDynamicSelectAllByNull(TestSelectCount.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@bb9e6dc]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@bb9e6dc]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@bb9e6dc]
+DEBUG [main] - Cache Hit Ratio [tk.mybatis.mapper.cache.CountryCacheMapper]: 0.0
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@39d76cb5]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 35(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@39d76cb5]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@39d76cb5]
+DEBUG [main] - Cache Hit Ratio [tk.mybatis.mapper.cache.CountryCacheMapper]: 0.5
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@479cbee5]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: null, null, null
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Cache Hit Ratio [tk.mybatis.mapper.cache.CountryCacheMapper]: 0.6666666666666666
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 35(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@479cbee5]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@479cbee5]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@479cbee5]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@420a85c4]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@420a85c4]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@420a85c4]
+DEBUG [main] - Cache Hit Ratio [tk.mybatis.mapper.cache.CountryCacheRefMapper]: 0.0
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5d99c6b5]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 35(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5d99c6b5]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5d99c6b5]
+DEBUG [main] - Cache Hit Ratio [tk.mybatis.mapper.cache.CountryCacheRefMapper]: 0.5
+DEBUG [main] - Cache Hit Ratio [tk.mybatis.mapper.cache.CountryCacheRefMapper]: 0.3333333333333333
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@37fb0bed]
+DEBUG [main] - ==>  Preparing: select * from country where id = ? 
+DEBUG [main] - ==> Parameters: 35(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@37fb0bed]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@37fb0bed]
+DEBUG [main] - Cache Hit Ratio [tk.mybatis.mapper.cache.CountryCacheRefMapper]: 0.5
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@28b46423]
+DEBUG [main] - ==>  Preparing: UPDATE country SET countryname = ?,countrycode = ? WHERE id = ? 
+DEBUG [main] - ==> Parameters: null, null, null
+DEBUG [main] - <==    Updates: 0
+DEBUG [main] - Cache Hit Ratio [tk.mybatis.mapper.cache.CountryCacheRefMapper]: 0.6
+DEBUG [main] - ==>  Preparing: select * from country where id = ? 
+DEBUG [main] - ==> Parameters: 35(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Rolling back JDBC Connection [org.hsqldb.jdbc.JDBCConnection@28b46423]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@28b46423]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@28b46423]
+DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1787bc24]
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1787bc24]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1787bc24]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@53b7f657]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 35(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@53b7f657]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@53b7f657]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5a37d3ed]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 35(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5a37d3ed]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5a37d3ed]
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4a3631f8]
+DEBUG [main] - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM country WHERE id = ? 
+DEBUG [main] - ==> Parameters: 35(Integer)
+DEBUG [main] - <==      Total: 1
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4a3631f8]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4a3631f8]
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at tk.mybatis.mapper.test.country.TestExistsWithPrimaryKey.testDynamicExistsWithPrimaryKey(TestExistsWithPrimaryKey.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@27508c5d]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE ( ( id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and id not in ( ? ) ) ) ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 1(Integer), 2(Integer), 3(Integer), 4(Integer), 5(Integer), 6(Integer), 7(Integer), 8(Integer), 9(Integer), 10(Integer), 11(Integer), 11(Integer)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@27508c5d]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@27508c5d]
+java.lang.AssertionError: expected:<10> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.example.TestSelectByExample.testSelectByExampleInNotIn2(TestSelectByExample.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6e01f9b0]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE ( ( id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and id not in ( ? ) ) ) ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 1(Integer), 2(Integer), 3(Integer), 4(Integer), 5(Integer), 6(Integer), 7(Integer), 8(Integer), 9(Integer), 10(Integer), 11(Integer), 11(Integer)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6e01f9b0]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@6e01f9b0]
+java.lang.AssertionError: expected:<10> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.example.TestSelectByExample.testSelectByExampleInNotIn(TestSelectByExample.java:126)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@59d4cd39]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country order by id DESC,countryname,countrycode ASC 
+DEBUG [main] - ==> Parameters: 
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@59d4cd39]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@59d4cd39]
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at tk.mybatis.mapper.test.example.TestSelectByExample.testOrderBy(TestSelectByExample.java:273)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7c51f34b]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE ( ( id > ? and id < ? ) or ( id < ? ) ) ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 100(Integer), 151(Integer), 41(Integer)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7c51f34b]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7c51f34b]
+java.lang.AssertionError: expected:<90> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.example.TestSelectByExample.testAndOr(TestSelectByExample.java:248)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@57576994]
+DEBUG [main] - ==>  Preparing: SELECT distinct id,countryname,countrycode FROM country WHERE ( ( countryname like ? ) or ( id > ? ) ) ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: A%(String), 100(Integer)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@57576994]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@57576994]
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at tk.mybatis.mapper.test.example.TestSelectByExample.testSelectByExample2(TestSelectByExample.java:159)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7ef27d7f]
+DEBUG [main] - ==>  Preparing: SELECT countryname , countrycode FROM country WHERE ( ( id > ? and id < ? ) or ( id < ? ) ) ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 100(Integer), 151(Integer), 41(Integer)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7ef27d7f]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7ef27d7f]
+java.lang.AssertionError: expected:<90> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at tk.mybatis.mapper.test.example.TestSelectByExample.testExcludeColumnsByExample(TestSelectByExample.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5c669da8]
+DEBUG [main] - ==>  Preparing: SELECT countryname FROM country WHERE ( ( id = ? ) ) ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 35(Integer)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5c669da8]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5c669da8]
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at tk.mybatis.mapper.test.example.TestSelectByExample.testSelectPropertisCheckCorrect(TestSelectByExample.java:291)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
+DEBUG [main] - Opening JDBC Connection
+DEBUG [main] - Setting autocommit to false on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4032d386]
+DEBUG [main] - ==>  Preparing: SELECT id,countryname,countrycode FROM country WHERE ( ( id > ? and countryname = ? ) ) ORDER BY id desc,countryname DESC 
+DEBUG [main] - ==> Parameters: 20(Integer), China(String)
+DEBUG [main] - <==      Total: 0
+DEBUG [main] - Resetting autocommit to true on JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4032d386]
+DEBUG [main] - Closing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4032d386]
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at tk.mybatis.mapper.test.example.TestSelectByExample.testSelectByExample4(TestSelectByExample.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.execute(JUnitTestExecutor.java:259)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:327)
+	at edu.illinois.cs.testrunner.execution.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.illinois.cs.testrunner.execution.Executor$.$anonfun$run$1(Executor.scala:30)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.execution.Executor$.run(Executor.scala:28)
+	at edu.illinois.cs.testrunner.execution.Executor$.main(Executor.scala:18)
+	at edu.illinois.cs.testrunner.execution.Executor.main(Executor.scala)
